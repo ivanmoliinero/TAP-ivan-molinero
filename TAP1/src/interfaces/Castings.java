@@ -9,11 +9,11 @@ public class Castings {
 
         Object o1 = new Thing();
         Bop b = (Bop)o1;
-        b.dance();
+        System.out.println(b.dance());
         Musician m = (Musician)o1;
-        m.sing();
+        System.out.println( m.sing());
         Musician m2 = (Musician)b;
-        b.dance();
+        System.out.println(b.dance());
 
 
 

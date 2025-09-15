@@ -5,69 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fd9e165-2b19-442d-a347-b9b8261e181d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/bank/Account.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/bank/Bank.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/bank/BonusAccount.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/bank/CheckingAccount.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/bank/Customer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/bank/InvestFund.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/bank/NoMoney.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/bank/SaveAccount.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/bank/UseBank.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/cars/Car.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/cars/UseCar.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/exception/TAPException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/exception/TAPMain.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/exception/TapCourse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/farm/Animal.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/farm/Cat.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/farm/Dog.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/farm/MutantParrot.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/farm/Parrot.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/farm/UseAnimal.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/farm/UseAnimal2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/inheritance/Bart.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/inheritance/Homer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/inheritance/Talkative.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/inheritance/UseTalkative.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/interfaces/Bop.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/interfaces/Castings.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/interfaces/Musician.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/interfaces/Thing.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/interfaces/UseThing.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/others/IO1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/others/IO2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/others/Person.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/others/Property.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/others/Test2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/others/Tokens.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/stacks/ArrayStack.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/stacks/Stack.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/stacks/VectorStack.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/structures/AgeComparator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/structures/Client.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/structures/ListSample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/structures/MapSample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/structures/NameComparator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/structures/Person.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/structures/Test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/structures/Test2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/structures/Test3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TAP1/structures/Test4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/TAP-ivan-molinero.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/groovyc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bank/UseBankMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exception/TAPMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception/TAPMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/farm/UseAnimal2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/farm/UseAnimal2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inheritance/UseTalkative.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/UseTalkative.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/others/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/others/Test2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/structures/AgeComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/AgeComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/structures/ListSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/ListSample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/structures/MapSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/MapSample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/structures/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/structures/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/Test2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/structures/Test3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/Test3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/structures/Test4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/Test4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TAP1/bank/Bank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAP1/bank/Bank.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TAP1/bank/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAP1/bank/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TAP1/bank/UseBank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAP1/bank/UseBank.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TAP1/interfaces/Castings.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAP1/interfaces/Castings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TAP1/structures/AgeComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAP1/structures/AgeComparator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/Bank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bank/UseBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/UseBank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/Castings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/Castings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TAP4/TAP4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../TAP4/TAP4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TapGroovy/TapGroovy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../TapGroovy/TapGroovy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TapGroovy2/TapGroovy2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../TapGroovy2/TapGroovy2.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,9 +179,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectFrameBounds">
     <option name="x" value="70" />
     <option name="y" value="1" />
@@ -293,15 +247,21 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Castings.executor": "Run",
     "Application.Test.executor": "Run",
     "Application.Test2.executor": "Run",
     "Application.Test3.executor": "Run",
     "Application.Test4.executor": "Run",
     "Application.UseBank.executor": "Run",
+    "Application.UseBankMap.executor": "Run",
+    "Application.UseThing.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/34811664-Z/OneDrive - URV/2024/dev/TAP/TAP1"
+    "last_opened_file_path": "/Users/ivanmolineromoreno/DatosUNI/3r_curso/Tecniques Avancades de Programacio/TAP-ivan-molinero/TAP1",
+    "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -310,7 +270,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test4">
+  <component name="RunManager" selected="Application.UseBankMap">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -513,50 +473,22 @@
       <envs />
       <method />
     </configuration>
+    <configuration name="Castings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interfaces.Castings" />
+      <module name="TAP1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="interfaces.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="structures.Test" />
-      <module name="TAP1" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="structures.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="structures.Test2" />
-      <module name="TAP1" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="structures.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="structures.Test3" />
-      <module name="TAP1" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="structures.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="structures.Test4" />
       <module name="TAP1" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -576,6 +508,34 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="bank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UseBankMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bank.UseBankMap" />
+      <module name="TAP1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UseThing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interfaces.UseThing" />
+      <module name="TAP1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="interfaces.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -612,19 +572,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Castings" />
+      <item itemvalue="Application.UseBankMap" />
+      <item itemvalue="Application.UseThing" />
       <item itemvalue="Application.Test" />
-      <item itemvalue="Application.Test2" />
-      <item itemvalue="Application.Test3" />
-      <item itemvalue="Application.Test4" />
       <item itemvalue="Application.UseBank" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test4" />
-        <item itemvalue="Application.Test3" />
-        <item itemvalue="Application.Test2" />
-        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.UseBankMap" />
         <item itemvalue="Application.UseBank" />
+        <item itemvalue="Application.Castings" />
+        <item itemvalue="Application.UseThing" />
+        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
