@@ -46,6 +46,10 @@ public class UseBank {
         System.out.println("Before revision:");
         b1.showAccounts();
 
+        System.out.println("List of accounts: ");
+        System.out.println(b1.getAccounts());
+
+
     }
 
 }
