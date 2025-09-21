@@ -10,24 +10,15 @@ public class Bank implements Serializable {
     private static final long serialVersionUID = 1; // for the version of serialization.
 
     private String name;
-    private List<Account> accounts;
     private Map<String, List<Account>> accountsMap;
     private List<Customer> customers;
 
     public Bank(String name) {
-        accounts = new LinkedList<>();
         customers = new LinkedList<>();
         accountsMap = new HashMap<String, List<Account>>();
         this.name = name;
     }
 
-    public void addAccount(Account newAccount){
-        accounts.add(newAccount);
-    }
-    public void removeAccount(Account oldAccount) { accounts.remove(oldAccount); }
-    public List<Account> getAccounts(){
-        return accounts;
-    }
     public void addCustomer(Customer newCustomer){
         customers.add(newCustomer);
     }
@@ -63,17 +54,29 @@ public class Bank implements Serializable {
         return result;
     }
 
+    // NOTE: Both method could be optimised to avoid 2 iterations over the accounts and just one by not reusing the method getAccountsMap() implemented.
     public void showAccounts(){
-        for (Account a:accounts)
+        for(Account a : getAccountsMap()) {
             System.out.println(a);
+        }
+    }
+
+    public List<Account> orderAccountsByOwner() {
+        List<Account> acc = getAccountsMap();
+        acc.sort(new AccountOwnerComparator());
+        return acc;
+    }
+
+    public void orderAccountsByBalance() {
+        // it would be the same as the method above with a new Comparator.
     }
 
     public void revision(){
-        for (Account acc:accounts)
+        for (Account acc:getAccountsMap())
             acc.revision();
     }
 
-    public void lottery() { accounts.get(new Random().nextInt()).deposit(300); }
+    public void lottery() { getAccountsMap().get(new Random().nextInt(accountsMap.size())).deposit(300); }
 
 
 }

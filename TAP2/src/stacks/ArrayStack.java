@@ -2,7 +2,7 @@ package stacks;
 
 import java.util.Iterator;
 
-public class ArrayStack<T> implements Stack<T>,Iterator<T> {
+public class ArrayStack<T> implements Stack<T>, Iterator<T> {
 
 	 private T[] monton;
 	 private int cima;
@@ -58,7 +58,7 @@ public class ArrayStack<T> implements Stack<T>,Iterator<T> {
 
 	public void remove() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }

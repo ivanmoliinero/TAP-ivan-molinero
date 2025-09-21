@@ -1,6 +1,6 @@
 package structures;
 
-public class Client {
+public class Client implements Comparable<Client> {
 	private String name;
 	private int age;
 
@@ -16,4 +16,8 @@ public class Client {
 	public String getName() {
 		return name;
 	}
+
+    public int compareTo(Client other) {
+        return this.name.compareTo(other.getName());
+    }
 }

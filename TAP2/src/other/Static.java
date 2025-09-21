@@ -11,6 +11,7 @@ public class Static {
     public static void main(String[] args) {
         out.println("pedro"+sqrt(9));
         double r = cos(PI * 6);
+        out.println(r);
 
     }
 }

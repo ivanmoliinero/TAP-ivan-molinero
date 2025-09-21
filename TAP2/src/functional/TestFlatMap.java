@@ -24,8 +24,8 @@ public class TestFlatMap {
         team.add(busy);
 
         List<String> teamLanguages = team.stream().
-                map(d -> d.getLanguages()).
-                flatMap(l -> l.stream()).
+                map(Developer::getLanguages).
+                flatMap(l -> l.stream()). // TODO: Preguntar en clase.
                 collect(Collectors.toList());
 
         System.out.println(teamLanguages);

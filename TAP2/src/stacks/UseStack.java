@@ -16,7 +16,7 @@ public class UseStack {
 		for (Integer i:pila)
 			System.out.println(i);
 		
-	//	test(pila);
+        test(pila);
 		
 		pila = new VectorStack<Integer>(10);
 		pila.push(3);

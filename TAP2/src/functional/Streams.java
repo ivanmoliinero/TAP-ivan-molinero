@@ -31,17 +31,25 @@ public class Streams {
 
         Stream<Animal> animalsOver3 = list.stream().filter(p -> p.getAge() > 30);
         animalsOver3.forEach(elem -> System.out.println(elem.getAge()));
+        // animalsOver3.forEach(elem -> System.out.println(elem.getAge())); // not possible, stream already consumed, IllegalStateException.
 
 
-
+        // We can obtain a collection from a stream with the collect() method.
         List<Animal> result = list.stream().filter(p -> p.getAge() > 30).collect(Collectors.toList());
         result.forEach(System.out::println);
+        // result.forEach(System.out::println); // possible, as a List is not consumed once the elements are visited thoroughly.
 
-
+        // The terminal ops can be invoked insitu.
         long number =  list.stream().filter(p -> p.getAge() > 30).count();
         System.out.println("number "+number);
 
         System.out.println(list.stream().filter(p -> p.getAge() > 30).count());
+
+        // Demonstration of how collect() is a terminal operation.
+        Stream<Animal> test = list.stream().filter((Animal p) -> p.getAge() > 30);
+        List<Animal> testList = test.collect(Collectors.toList());
+        // List<Animal> testList2 = test.collect(Collectors.toList());
+
 
 
 

@@ -7,6 +7,8 @@ import java.awt.event.ActionListener;
 
 /**
  * @author MikeW
+ * Use of ActionListener in SWING to show a GUI with an approach of an anonymous class
+ * and a lambda function (given this is a functional interface).
  */
 public class ListenerTest {
     public static void main(String[] args) {

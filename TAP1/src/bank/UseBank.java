@@ -15,10 +15,10 @@ public class UseBank {
         Account a4 = new BonusAccount(10,c3);
 
         Bank b1 = new Bank("TAP");
-        b1.addAccount(a1);
-        b1.addAccount(a2);
-        b1.addAccount(a3);
-        b1.addAccount(a4);
+//        b1.addAccount(a1);
+//        b1.addAccount(a2);
+//        b1.addAccount(a3);
+//        b1.addAccount(a4);
 
         b1.addCustomer(c1);
         b1.addCustomer(c2);
@@ -47,7 +47,7 @@ public class UseBank {
         b1.showAccounts();
 
         System.out.println("List of accounts: ");
-        System.out.println(b1.getAccounts());
+        // System.out.println(b1.getAccounts());
 
 
     }

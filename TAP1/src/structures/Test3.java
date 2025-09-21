@@ -2,6 +2,7 @@ package structures;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class Test3 {
@@ -27,7 +28,7 @@ public class Test3 {
 		print(c);
 
 		NameComparator t1 = new NameComparator();
-		c.sort(t1);
+		Collections.sort(c);
 		//Collections.sort(c, t1);
 		System.out.println("-Ordered by name--------");
 		print(c);

@@ -29,7 +29,7 @@ public class Test2 {
 	}
 
 	public static <T extends Animal> void test2(Collection<T> c) {
-		for (Animal elem: c)
+		for (T elem: c) // reference with T or Animal using polymorfism, the bytecodes will remain the same in both cases.
 			System.out.println(elem.talk());
 		
 		System.out.println("-------------------------");

@@ -13,7 +13,7 @@ public class Functional {
 
     public static void main(String[] args){
 
-        Consumer<Integer>  c = (Integer x) -> { System.out.println(x); };
+        Consumer<Integer>  c = (Integer x) -> { System.out.println(x); }; // functional interface that can be defined throughout a LAMBDA expression.
 
         BiConsumer<Integer, String> b = (Integer x, String y) -> System.out.println(x + " : " + y);
 
