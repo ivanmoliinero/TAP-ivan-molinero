@@ -4,45 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b6a419e-c707-43ab-a992-18d0d09502ac" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../TAP1/src/bank/AccountOwnerComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/filterMethodImplementation/FilterClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/filterMethodImplementation/UseFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TAP1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TAP1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TAP1/out/production/TAP1/bank/Bank.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TAP1/out/production/TAP1/bank/Bank.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TAP1/out/production/TAP1/bank/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TAP1/out/production/TAP1/bank/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TAP1/out/production/TAP1/bank/UseBank.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TAP1/out/production/TAP1/bank/UseBank.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TAP1/out/production/TAP1/structures/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TAP1/out/production/TAP1/structures/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TAP1/out/production/TAP1/structures/Test3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TAP1/out/production/TAP1/structures/Test3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TAP1/src/bank/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TAP1/src/bank/Bank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TAP1/src/bank/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TAP1/src/bank/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TAP1/src/bank/UseBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TAP1/src/bank/UseBank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TAP1/src/bank/UseBankMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TAP1/src/bank/UseBankMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TAP1/src/structures/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TAP1/src/structures/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TAP1/src/structures/Test3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TAP1/src/structures/Test3.java" afterDir="false" />
+    <list default="true" id="b410c348-c3ec-404f-9f10-fd093ae03d70" name="Changes" comment="TAP2 class revised and changes, corrections and anotations added.&#10;First exercise of TAP2 completed with lambda implementation.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README" beforeDir="false" afterPath="$PROJECT_DIR$/README" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TAP2/functional/ComparatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAP2/functional/ComparatorTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TAP2/functional/Filter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAP2/functional/Filter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TAP2/functional/ListenerTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAP2/functional/ListenerTest$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TAP2/functional/ListenerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAP2/functional/ListenerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TAP2/functional/Streams.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAP2/functional/Streams.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TAP2/functional/Streams2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAP2/functional/Streams2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TAP2/functional/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAP2/functional/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TAP2/generics/Test2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAP2/generics/Test2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TAP2/other/Enum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAP2/other/Enum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TAP2/stacks/UseStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAP2/stacks/UseStack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functional/Functional.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/functional/Functional.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functional/ListenerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/functional/ListenerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functional/Streams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/functional/Streams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functional/TestFlatMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/functional/TestFlatMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functional/TestParallel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/functional/TestParallel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generics/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generics/Test2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/other/Static.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/other/Static.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stacks/ArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stacks/ArrayStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stacks/UseStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stacks/UseStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vthreads/HelloRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vthreads/HelloRunnable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vthreads/HelloThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vthreads/HelloThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -314,6 +277,7 @@
     "Application.Test2.executor": "Run",
     "Application.TestFlatMap.executor": "Run",
     "Application.TestParallel.executor": "Run",
+    "Application.UseFilter.executor": "Run",
     "Application.UseStack.executor": "Debug",
     "Application.UseThing.executor": "Run",
     "Application.UseThing2.executor": "Run",
@@ -663,13 +627,30 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5b6a419e-c707-43ab-a992-18d0d09502ac" name="Default" comment="" />
+      <changelist id="" name="Default" comment="" />
       <created>1441790986672</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1441790986672</updated>
       <workItem from="1441790990211" duration="5867000" />
     </task>
+    <task id="LOCAL-00001" summary="Merge remote-tracking branch 'origin/master'">
+      <option name="closed" value="true" />
+      <created>1758470937959</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1758470937959</updated>
+    </task>
+    <task id="LOCAL-00002" summary="TAP2 class revised and changes, corrections and anotations added.&#10;First exercise of TAP2 completed with lambda implementation.">
+      <option name="closed" value="true" />
+      <created>1758471021733</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1758471021733</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -725,6 +706,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Class revised and anotations to the classes made + some corrections.&#10;First exercised done with a lambda function." />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
+    <MESSAGE value="TAP2 class revised and changes, corrections and anotations added.&#10;First exercise of TAP2 completed with lambda implementation." />
+    <option name="LAST_COMMIT_MESSAGE" value="TAP2 class revised and changes, corrections and anotations added.&#10;First exercise of TAP2 completed with lambda implementation." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

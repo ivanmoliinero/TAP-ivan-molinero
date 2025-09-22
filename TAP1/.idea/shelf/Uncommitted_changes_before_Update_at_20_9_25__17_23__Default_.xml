@@ -1,0 +1,29 @@
+<changelist name="Uncommitted_changes_before_Update_at_20_9_25,_17_23_[Default]" date="1758381834641" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_9_25,_17_23_[Default]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 20/9/25, 17:23 [Default]" />
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/TAP1/bank/Customer.class" />
+    <option name="AFTER_PATH" value="out/production/TAP1/bank/Customer.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_9_25,_17_23_[Default]/Customer.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/TAP1/bank/UseBank.class" />
+    <option name="AFTER_PATH" value="out/production/TAP1/bank/UseBank.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_9_25,_17_23_[Default]/UseBank.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/TAP1/bank/Bank.class" />
+    <option name="AFTER_PATH" value="out/production/TAP1/bank/Bank.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_9_25,_17_23_[Default]/Bank.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/TAP1/structures/Test3.class" />
+    <option name="AFTER_PATH" value="out/production/TAP1/structures/Test3.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_9_25,_17_23_[Default]/Test3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/TAP1/structures/Client.class" />
+    <option name="AFTER_PATH" value="out/production/TAP1/structures/Client.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_9_25,_17_23_[Default]/Client.class" />
+  </binary>
+</changelist>

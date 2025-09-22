@@ -1,0 +1,397 @@
+Index: src/structures/Client.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package structures;\r\n\r\npublic class Client {\r\n\tprivate String name;\r\n\tprivate int age;\r\n\r\n\tpublic Client(String name, int age) {\r\n\t\tthis.name = name;\r\n\t\tthis.age = age;\r\n\t}\r\n\r\n\tpublic int getAge() {\r\n\t\treturn age;\r\n\t}\r\n\r\n\tpublic String getName() {\r\n\t\treturn name;\r\n\t}\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/structures/Client.java b/src/structures/Client.java
+--- a/src/structures/Client.java	(revision 6b2bbe0b927e26fab44a97e9bff3b380d1abfb5a)
++++ b/src/structures/Client.java	(date 1758380531593)
+@@ -1,6 +1,6 @@
+ package structures;
+ 
+-public class Client {
++public class Client implements Comparable<Client> {
+ 	private String name;
+ 	private int age;
+ 
+@@ -16,4 +16,8 @@
+ 	public String getName() {
+ 		return name;
+ 	}
++
++    public int compareTo(Client other) {
++        return this.name.compareTo(other.getName());
++    }
+ }
+\ No newline at end of file
+Index: src/bank/UseBank.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package bank;\n\n/**\n * Created by pedro on 9/14/15.\n */\npublic class UseBank {\n    public static void main(String[] args) {\n        Customer c1 = new Customer(\"1\",\"pedro\");\n        Customer c2 = new Customer(\"2\",\"pep\");\n        Customer c3 = new Customer(\"3\",\"pau\");\n\n        Account a1 = new CheckingAccount(90,c1);\n        Account a2 = new SaveAccount(100,c2);\n        Account a3 = new InvestFund(10,c3);\n        Account a4 = new BonusAccount(10,c3);\n\n        Bank b1 = new Bank(\"TAP\");\n        b1.addAccount(a1);\n        b1.addAccount(a2);\n        b1.addAccount(a3);\n        b1.addAccount(a4);\n\n        b1.addCustomer(c1);\n        b1.addCustomer(c2);\n        b1.addCustomer(c3);\n\n        b1.showAccounts();\n\n        a1.deposit(10);\n\n        try {\n            a3.withdraw(1);\n        }catch(NoMoney e1){\n            System.out.println(e1.getMessage());\n        }\n\n        try {\n            a4.withdraw(100);\n        }catch(NoMoney e1){\n            System.out.println(e1.getMessage());\n        }\n\n        System.out.println(\"Before revision:\");\n        b1.showAccounts();\n        b1.revision();\n        System.out.println(\"Before revision:\");\n        b1.showAccounts();\n\n        System.out.println(\"List of accounts: \");\n        System.out.println(b1.getAccounts());\n\n\n    }\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/bank/UseBank.java b/src/bank/UseBank.java
+--- a/src/bank/UseBank.java	(revision 6b2bbe0b927e26fab44a97e9bff3b380d1abfb5a)
++++ b/src/bank/UseBank.java	(date 1758380324230)
+@@ -15,10 +15,10 @@
+         Account a4 = new BonusAccount(10,c3);
+ 
+         Bank b1 = new Bank("TAP");
+-        b1.addAccount(a1);
+-        b1.addAccount(a2);
+-        b1.addAccount(a3);
+-        b1.addAccount(a4);
++//        b1.addAccount(a1);
++//        b1.addAccount(a2);
++//        b1.addAccount(a3);
++//        b1.addAccount(a4);
+ 
+         b1.addCustomer(c1);
+         b1.addCustomer(c2);
+@@ -47,7 +47,7 @@
+         b1.showAccounts();
+ 
+         System.out.println("List of accounts: ");
+-        System.out.println(b1.getAccounts());
++        // System.out.println(b1.getAccounts());
+ 
+ 
+     }
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"8fd9e165-2b19-442d-a347-b9b8261e181d\" name=\"Default\" comment=\"\">\n      <change afterPath=\"$PROJECT_DIR$/../.idea/TAP-ivan-molinero.iml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/.idea/groovyc.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/bank/UseBankMap.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/TAP1/bank/Bank.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/TAP1/bank/Bank.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/TAP1/bank/Customer.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/TAP1/bank/Customer.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/TAP1/bank/UseBank.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/TAP1/bank/UseBank.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/TAP1/interfaces/Castings.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/TAP1/interfaces/Castings.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/out/production/TAP1/structures/AgeComparator.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/TAP1/structures/AgeComparator.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/bank/Bank.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/bank/Bank.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/bank/Customer.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/bank/Customer.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/bank/UseBank.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/bank/UseBank.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/interfaces/Castings.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/interfaces/Castings.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../TAP4/TAP4.iml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/../TAP4/TAP4.iml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../TapGroovy/TapGroovy.iml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/../TapGroovy/TapGroovy.iml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/../TapGroovy2/TapGroovy2.iml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/../TapGroovy2/TapGroovy2.iml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"CreatePatchCommitExecutor\">\n    <option name=\"PATCH_PATH\" value=\"\" />\n  </component>\n  <component name=\"FileEditorManager\">\n    <leaf>\n      <file leaf-file-name=\"README\" pinned=\"false\" current-in-tab=\"true\">\n        <entry file=\"file://$PROJECT_DIR$/README\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state vertical-scroll-proportion=\"1.0909091\">\n              <caret line=\"34\" column=\"37\" selection-start-line=\"34\" selection-start-column=\"37\" selection-end-line=\"34\" selection-end-column=\"37\" />\n              <folding />\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file leaf-file-name=\"ListSample.java\" pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/src/structures/ListSample.java\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state vertical-scroll-proportion=\"0.0\">\n              <caret line=\"29\" column=\"5\" selection-start-line=\"10\" selection-start-column=\"3\" selection-end-line=\"29\" selection-end-column=\"5\" />\n              <folding>\n                <element signature=\"imports\" expanded=\"true\" />\n                <element signature=\"e#374#382#0\" expanded=\"true\" />\n              </folding>\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file leaf-file-name=\"MapSample.java\" pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/src/structures/MapSample.java\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state vertical-scroll-proportion=\"0.0\">\n              <caret line=\"17\" column=\"31\" selection-start-line=\"17\" selection-start-column=\"31\" selection-end-line=\"17\" selection-end-column=\"31\" />\n              <folding>\n                <element signature=\"imports\" expanded=\"true\" />\n                <element signature=\"e#372#387#0\" expanded=\"true\" />\n              </folding>\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file leaf-file-name=\"Bop.java\" pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/src/interfaces/Bop.java\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state vertical-scroll-proportion=\"0.0\">\n              <caret line=\"2\" column=\"17\" selection-start-line=\"2\" selection-start-column=\"17\" selection-end-line=\"2\" selection-end-column=\"17\" />\n              <folding />\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file leaf-file-name=\"Thing.java\" pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/src/interfaces/Thing.java\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state vertical-scroll-proportion=\"0.0\">\n              <caret line=\"2\" column=\"13\" selection-start-line=\"2\" selection-start-column=\"13\" selection-end-line=\"2\" selection-end-column=\"13\" />\n              <folding />\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file leaf-file-name=\"Person.java\" pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/src/structures/Person.java\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state vertical-scroll-proportion=\"0.0\">\n              <caret line=\"11\" column=\"18\" selection-start-line=\"11\" selection-start-column=\"18\" selection-end-line=\"11\" selection-end-column=\"18\" />\n              <folding>\n                <element signature=\"e#338#339#0\" expanded=\"true\" />\n                <element signature=\"e#364#365#0\" expanded=\"true\" />\n                <element signature=\"e#402#403#0\" expanded=\"true\" />\n                <element signature=\"e#432#433#0\" expanded=\"true\" />\n              </folding>\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file leaf-file-name=\"ArrayStack.java\" pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/src/stacks/ArrayStack.java\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state vertical-scroll-proportion=\"0.0\">\n              <caret line=\"2\" column=\"13\" selection-start-line=\"2\" selection-start-column=\"13\" selection-end-line=\"2\" selection-end-column=\"13\" />\n              <folding />\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file leaf-file-name=\"UseThing.java\" pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/src/interfaces/UseThing.java\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state vertical-scroll-proportion=\"0.0\">\n              <caret line=\"5\" column=\"22\" selection-start-line=\"5\" selection-start-column=\"22\" selection-end-line=\"5\" selection-end-column=\"22\" />\n              <folding />\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file leaf-file-name=\"Talkative.java\" pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/src/inheritance/Talkative.java\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state vertical-scroll-proportion=\"0.0\">\n              <caret line=\"2\" column=\"22\" selection-start-line=\"2\" selection-start-column=\"22\" selection-end-line=\"2\" selection-end-column=\"22\" />\n              <folding />\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file leaf-file-name=\"UseTalkative.java\" pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/src/inheritance/UseTalkative.java\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state vertical-scroll-proportion=\"0.0\">\n              <caret line=\"3\" column=\"13\" selection-start-line=\"3\" selection-start-column=\"13\" selection-end-line=\"3\" selection-end-column=\"13\" />\n              <folding />\n            </state>\n          </provider>\n        </entry>\n      </file>\n    </leaf>\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/..\" />\n  </component>\n  <component name=\"GradleLocalSettings\">\n    <option name=\"externalProjectsViewState\">\n      <projects_view />\n    </option>\n  </component>\n  <component name=\"IdeDocumentHistory\">\n    <option name=\"CHANGED_PATHS\">\n      <list>\n        <option value=\"$PROJECT_DIR$/src/Car/Car.java\" />\n        <option value=\"$PROJECT_DIR$/src/Thing/UseThing.java\" />\n        <option value=\"$PROJECT_DIR$/src/Collections/Person.java\" />\n        <option value=\"$PROJECT_DIR$/src/Collections/ListSample.java\" />\n        <option value=\"$PROJECT_DIR$/src/Collections/MapSample.java\" />\n        <option value=\"$PROJECT_DIR$/src/structures/MapSample.java\" />\n        <option value=\"$PROJECT_DIR$/src/inheritance/UseTalkative.java\" />\n        <option value=\"$PROJECT_DIR$/README\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"JsBuildToolGruntFileManager\" detection-done=\"true\" />\n  <component name=\"JsGulpfileManager\">\n    <detection-done>true</detection-done>\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 7\n}</component>\n  <component name=\"ProjectFrameBounds\">\n    <option name=\"x\" value=\"70\" />\n    <option name=\"y\" value=\"1\" />\n    <option name=\"width\" value=\"1400\" />\n    <option name=\"height\" value=\"1000\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2phGxXHPLuWahinwySXEJnGMrIs\" />\n  <component name=\"ProjectView\">\n    <navigator currentView=\"ProjectPane\" proportions=\"\" version=\"1\">\n      <flattenPackages />\n      <showMembers />\n      <showModules />\n      <showLibraryContents />\n      <hideEmptyPackages />\n      <abbreviatePackageNames />\n      <autoscrollToSource />\n      <autoscrollFromSource />\n      <sortByType />\n    </navigator>\n    <panes>\n      <pane id=\"Scope\" />\n      <pane id=\"Scratches\" />\n      <pane id=\"PackagesPane\" />\n      <pane id=\"ProjectPane\">\n        <subPane>\n          <PATH>\n            <PATH_ELEMENT>\n              <option name=\"myItemId\" value=\"TAP1\" />\n              <option name=\"myItemType\" value=\"com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode\" />\n            </PATH_ELEMENT>\n          </PATH>\n          <PATH>\n            <PATH_ELEMENT>\n              <option name=\"myItemId\" value=\"TAP1\" />\n              <option name=\"myItemType\" value=\"com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode\" />\n            </PATH_ELEMENT>\n            <PATH_ELEMENT>\n              <option name=\"myItemId\" value=\"TAP1\" />\n              <option name=\"myItemType\" value=\"com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode\" />\n            </PATH_ELEMENT>\n          </PATH>\n          <PATH>\n            <PATH_ELEMENT>\n              <option name=\"myItemId\" value=\"TAP1\" />\n              <option name=\"myItemType\" value=\"com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode\" />\n            </PATH_ELEMENT>\n            <PATH_ELEMENT>\n              <option name=\"myItemId\" value=\"TAP1\" />\n              <option name=\"myItemType\" value=\"com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode\" />\n            </PATH_ELEMENT>\n            <PATH_ELEMENT>\n              <option name=\"myItemId\" value=\"src\" />\n              <option name=\"myItemType\" value=\"com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode\" />\n            </PATH_ELEMENT>\n          </PATH>\n        </subPane>\n      </pane>\n    </panes>\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"Application.Castings.executor\": \"Run\",\n    \"Application.Test.executor\": \"Run\",\n    \"Application.Test2.executor\": \"Run\",\n    \"Application.Test3.executor\": \"Run\",\n    \"Application.Test4.executor\": \"Run\",\n    \"Application.UseBank.executor\": \"Run\",\n    \"Application.UseBankMap.executor\": \"Run\",\n    \"Application.UseThing.executor\": \"Run\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"RunOnceActivity.git.unshallow\": \"true\",\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\n    \"git-widget-placeholder\": \"master\",\n    \"kotlin-language-version-configured\": \"true\",\n    \"last_opened_file_path\": \"/Users/ivanmolineromoreno/DatosUNI/3r_curso/Tecniques Avancades de Programacio/TAP-ivan-molinero/TAP1\",\n    \"settings.editor.selected.configurable\": \"preferences.editor\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src\" />\n      <recent name=\"$PROJECT_DIR$\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"Application.UseBankMap\">\n    <configuration default=\"true\" type=\"AndroidRunConfigurationType\" factoryName=\"Android Application\">\n      <module name=\"\" />\n      <option name=\"ACTIVITY_CLASS\" value=\"\" />\n      <option name=\"MODE\" value=\"default_activity\" />\n      <option name=\"DEPLOY\" value=\"true\" />\n      <option name=\"ARTIFACT_NAME\" value=\"\" />\n      <option name=\"TARGET_SELECTION_MODE\" value=\"EMULATOR\" />\n      <option name=\"USE_LAST_SELECTED_DEVICE\" value=\"false\" />\n      <option name=\"PREFERRED_AVD\" value=\"\" />\n      <option name=\"USE_COMMAND_LINE\" value=\"true\" />\n      <option name=\"COMMAND_LINE\" value=\"\" />\n      <option name=\"WIPE_USER_DATA\" value=\"false\" />\n      <option name=\"DISABLE_BOOT_ANIMATION\" value=\"false\" />\n      <option name=\"NETWORK_SPEED\" value=\"full\" />\n      <option name=\"NETWORK_LATENCY\" value=\"none\" />\n      <option name=\"CLEAR_LOGCAT\" value=\"false\" />\n      <option name=\"SHOW_LOGCAT_AUTOMATICALLY\" value=\"true\" />\n      <option name=\"FILTER_LOGCAT_AUTOMATICALLY\" value=\"true\" />\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"AndroidTestRunConfigurationType\" factoryName=\"Android Tests\">\n      <module name=\"\" />\n      <option name=\"TESTING_TYPE\" value=\"0\" />\n      <option name=\"INSTRUMENTATION_RUNNER_CLASS\" value=\"\" />\n      <option name=\"METHOD_NAME\" value=\"\" />\n      <option name=\"CLASS_NAME\" value=\"\" />\n      <option name=\"PACKAGE_NAME\" value=\"\" />\n      <option name=\"TARGET_SELECTION_MODE\" value=\"EMULATOR\" />\n      <option name=\"USE_LAST_SELECTED_DEVICE\" value=\"false\" />\n      <option name=\"PREFERRED_AVD\" value=\"\" />\n      <option name=\"USE_COMMAND_LINE\" value=\"true\" />\n      <option name=\"COMMAND_LINE\" value=\"\" />\n      <option name=\"WIPE_USER_DATA\" value=\"false\" />\n      <option name=\"DISABLE_BOOT_ANIMATION\" value=\"false\" />\n      <option name=\"NETWORK_SPEED\" value=\"full\" />\n      <option name=\"NETWORK_LATENCY\" value=\"none\" />\n      <option name=\"CLEAR_LOGCAT\" value=\"false\" />\n      <option name=\"SHOW_LOGCAT_AUTOMATICALLY\" value=\"true\" />\n      <option name=\"FILTER_LOGCAT_AUTOMATICALLY\" value=\"true\" />\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"Applet\" factoryName=\"Applet\">\n      <module />\n      <option name=\"WIDTH\" value=\"400\" />\n      <option name=\"HEIGHT\" value=\"300\" />\n      <option name=\"POLICY_FILE\" value=\"$APPLICATION_HOME_DIR$/bin/appletviewer.policy\" />\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"CucumberJavaRunConfigurationType\" factoryName=\"Cucumber java\">\n      <extension name=\"coverage\" enabled=\"false\" merge=\"false\" sample_coverage=\"true\" runner=\"idea\" />\n      <option name=\"myFilePath\" />\n      <option name=\"GLUE\" />\n      <option name=\"myNameFilter\" />\n      <option name=\"myGeneratedName\" />\n      <option name=\"MAIN_CLASS_NAME\" />\n      <option name=\"VM_PARAMETERS\" />\n      <option name=\"PROGRAM_PARAMETERS\" />\n      <option name=\"WORKING_DIRECTORY\" />\n      <option name=\"ALTERNATIVE_JRE_PATH_ENABLED\" value=\"false\" />\n      <option name=\"ALTERNATIVE_JRE_PATH\" />\n      <option name=\"ENABLE_SWING_INSPECTOR\" value=\"false\" />\n      <option name=\"ENV_VARIABLES\" />\n      <option name=\"PASS_PARENT_ENVS\" value=\"true\" />\n      <module name=\"\" />\n      <envs />\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"FlashRunConfigurationType\" factoryName=\"Flash App\">\n      <option name=\"BCName\" value=\"\" />\n      <option name=\"IOSSimulatorSdkPath\" value=\"\" />\n      <option name=\"adlOptions\" value=\"\" />\n      <option name=\"airProgramParameters\" value=\"\" />\n      <option name=\"appDescriptorForEmulator\" value=\"Android\" />\n      <option name=\"debugTransport\" value=\"USB\" />\n      <option name=\"debuggerSdkRaw\" value=\"BC SDK\" />\n      <option name=\"emulator\" value=\"NexusOne\" />\n      <option name=\"emulatorAdlOptions\" value=\"\" />\n      <option name=\"fastPackaging\" value=\"true\" />\n      <option name=\"fullScreenHeight\" value=\"0\" />\n      <option name=\"fullScreenWidth\" value=\"0\" />\n      <option name=\"launchUrl\" value=\"false\" />\n      <option name=\"launcherParameters\">\n        <LauncherParameters>\n          <option name=\"browser\" value=\"a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8\" />\n          <option name=\"launcherType\" value=\"OSDefault\" />\n          <option name=\"newPlayerInstance\" value=\"false\" />\n          <option name=\"playerPath\" value=\"/usr/bin/flashplayerdebugger\" />\n        </LauncherParameters>\n      </option>\n      <option name=\"mobileRunTarget\" value=\"Emulator\" />\n      <option name=\"moduleName\" value=\"\" />\n      <option name=\"overriddenMainClass\" value=\"\" />\n      <option name=\"overriddenOutputFileName\" value=\"\" />\n      <option name=\"overrideMainClass\" value=\"false\" />\n      <option name=\"runTrusted\" value=\"true\" />\n      <option name=\"screenDpi\" value=\"0\" />\n      <option name=\"screenHeight\" value=\"0\" />\n      <option name=\"screenWidth\" value=\"0\" />\n      <option name=\"url\" value=\"http://\" />\n      <option name=\"usbDebugPort\" value=\"7936\" />\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"FlexUnitRunConfigurationType\" factoryName=\"FlexUnit\" appDescriptorForEmulator=\"Android\" class_name=\"\" emulatorAdlOptions=\"\" method_name=\"\" package_name=\"\" scope=\"Class\">\n      <option name=\"BCName\" value=\"\" />\n      <option name=\"launcherParameters\">\n        <LauncherParameters>\n          <option name=\"browser\" value=\"a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8\" />\n          <option name=\"launcherType\" value=\"OSDefault\" />\n          <option name=\"newPlayerInstance\" value=\"false\" />\n          <option name=\"playerPath\" value=\"/usr/bin/flashplayerdebugger\" />\n        </LauncherParameters>\n      </option>\n      <option name=\"moduleName\" value=\"\" />\n      <option name=\"trusted\" value=\"true\" />\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"GrailsRunConfigurationType\" factoryName=\"Grails\">\n      <module name=\"\" />\n      <setting name=\"vmparams\" value=\"\" />\n      <setting name=\"cmdLine\" value=\"run-app\" />\n      <setting name=\"depsClasspath\" value=\"false\" />\n      <setting name=\"passParentEnv\" value=\"true\" />\n      <extension name=\"coverage\" enabled=\"false\" merge=\"false\" sample_coverage=\"true\" runner=\"idea\" />\n      <setting name=\"launchBrowser\" value=\"false\" />\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"JavascriptDebugType\" factoryName=\"JavaScript Debug\">\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"ScalaTestRunConfiguration\" factoryName=\"ScalaTest\">\n      <extension name=\"coverage\" enabled=\"false\" merge=\"false\" sample_coverage=\"true\" runner=\"idea\" />\n      <extension name=\"scalaCoverage\" />\n      <module name=\"\" />\n      <setting name=\"path\" value=\"\" />\n      <setting name=\"package\" value=\"\" />\n      <setting name=\"vmparams\" value=\"\" />\n      <setting name=\"params\" value=\"\" />\n      <setting name=\"workingDirectory\" value=\"$PROJECT_DIR$\" />\n      <setting name=\"searchForTest\" value=\"Across module dependencies\" />\n      <setting name=\"testName\" value=\"\" />\n      <setting name=\"testKind\" value=\"Class\" />\n      <setting name=\"showProgressMessages\" value=\"true\" />\n      <envs />\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"Specs2RunConfiguration\" factoryName=\"Specs2\">\n      <extension name=\"coverage\" enabled=\"false\" merge=\"false\" sample_coverage=\"true\" runner=\"idea\" />\n      <extension name=\"scalaCoverage\" />\n      <module name=\"\" />\n      <setting name=\"path\" value=\"\" />\n      <setting name=\"package\" value=\"\" />\n      <setting name=\"vmparams\" value=\"\" />\n      <setting name=\"params\" value=\"\" />\n      <setting name=\"workingDirectory\" value=\"$PROJECT_DIR$\" />\n      <setting name=\"searchForTest\" value=\"Across module dependencies\" />\n      <setting name=\"testName\" value=\"\" />\n      <setting name=\"testKind\" value=\"Class\" />\n      <setting name=\"showProgressMessages\" value=\"true\" />\n      <envs />\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\">\n      <extension name=\"coverage\" enabled=\"false\" merge=\"false\" sample_coverage=\"true\" runner=\"idea\" />\n      <module name=\"\" />\n      <envs />\n      <method />\n    </configuration>\n    <configuration name=\"&lt;template&gt;\" type=\"WebApp\" default=\"true\" selected=\"false\">\n      <Host>localhost</Host>\n      <Port>5050</Port>\n    </configuration>\n    <configuration default=\"true\" type=\"#org.jetbrains.idea.devkit.run.PluginConfigurationType\" factoryName=\"Plugin\">\n      <module name=\"\" />\n      <option name=\"VM_PARAMETERS\" value=\"-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea\" />\n      <option name=\"PROGRAM_PARAMETERS\" />\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"js.build_tools.gulp\" factoryName=\"Gulp.js\">\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"osgi.bnd.run\" factoryName=\"Run Launcher\">\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"osgi.bnd.run\" factoryName=\"Test Launcher (JUnit)\">\n      <method />\n    </configuration>\n    <configuration default=\"true\" type=\"uTestRunConfiguration\" factoryName=\"utest\">\n      <extension name=\"coverage\" enabled=\"false\" merge=\"false\" sample_coverage=\"true\" runner=\"idea\" />\n      <extension name=\"scalaCoverage\" />\n      <module name=\"\" />\n      <setting name=\"path\" value=\"\" />\n      <setting name=\"package\" value=\"\" />\n      <setting name=\"vmparams\" value=\"\" />\n      <setting name=\"params\" value=\"\" />\n      <setting name=\"workingDirectory\" value=\"$PROJECT_DIR$\" />\n      <setting name=\"searchForTest\" value=\"Across module dependencies\" />\n      <setting name=\"testName\" value=\"\" />\n      <setting name=\"testKind\" value=\"Class\" />\n      <setting name=\"showProgressMessages\" value=\"true\" />\n      <envs />\n      <method />\n    </configuration>\n    <configuration name=\"Castings\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"interfaces.Castings\" />\n      <module name=\"TAP1\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"interfaces.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Test\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"structures.Test\" />\n      <module name=\"TAP1\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"structures.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"UseBank\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"bank.UseBank\" />\n      <module name=\"TAP1\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"bank.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"UseBankMap\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"bank.UseBankMap\" />\n      <module name=\"TAP1\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"bank.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"UseThing\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"interfaces.UseThing\" />\n      <module name=\"TAP1\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"interfaces.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration default=\"true\" type=\"Application\" factoryName=\"Application\">\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration default=\"true\" type=\"JUnit\" factoryName=\"JUnit\">\n      <option name=\"TEST_OBJECT\" value=\"class\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <option name=\"TEST_SEARCH_SCOPE\">\n        <value defaultName=\"moduleWithDependencies\" />\n      </option>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration default=\"true\" type=\"TestNG\">\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <option name=\"TEST_SEARCH_SCOPE\">\n        <value defaultName=\"moduleWithDependencies\" />\n      </option>\n      <properties />\n      <listeners />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <list>\n      <item itemvalue=\"Application.Castings\" />\n      <item itemvalue=\"Application.UseBankMap\" />\n      <item itemvalue=\"Application.UseThing\" />\n      <item itemvalue=\"Application.Test\" />\n      <item itemvalue=\"Application.UseBank\" />\n    </list>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.UseBankMap\" />\n        <item itemvalue=\"Application.UseBank\" />\n        <item itemvalue=\"Application.Castings\" />\n        <item itemvalue=\"Application.UseThing\" />\n        <item itemvalue=\"Application.Test\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SbtLocalSettings\">\n    <option name=\"externalProjectsViewState\">\n      <projects_view />\n    </option>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"8fd9e165-2b19-442d-a347-b9b8261e181d\" name=\"Default\" comment=\"\" />\n      <created>1441784674414</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1441784674414</updated>\n      <workItem from=\"1441784678986\" duration=\"2794000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TimeTrackingManager\">\n    <option name=\"totallyTimeSpent\" value=\"2794000\" />\n  </component>\n  <component name=\"ToolWindowManager\">\n    <frame x=\"70\" y=\"1\" width=\"1400\" height=\"1000\" extended-state=\"0\" />\n    <editor active=\"true\" />\n    <layout>\n      <window_info id=\"Palette\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"-1\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"TODO\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"6\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Messages\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.3295325\" sideWeight=\"0.5\" order=\"-1\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Palette&#9;\" active=\"false\" anchor=\"left\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"-1\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Event Log\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"-1\" side_tool=\"true\" content_ui=\"tabs\" />\n      <window_info id=\"Application Servers\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"-1\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Maven Projects\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"-1\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Version Control\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"-1\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Run\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"true\" weight=\"0.3295325\" sideWeight=\"0.5\" order=\"2\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Terminal\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"-1\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Designer\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"-1\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Project\" active=\"false\" anchor=\"left\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"true\" weight=\"0.24964234\" sideWeight=\"0.5\" order=\"0\" side_tool=\"false\" content_ui=\"combo\" />\n      <window_info id=\"Database\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"-1\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Structure\" active=\"false\" anchor=\"left\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.25\" sideWeight=\"0.5\" order=\"1\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Ant Build\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.25\" sideWeight=\"0.5\" order=\"1\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"UI Designer\" active=\"false\" anchor=\"left\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"-1\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Favorites\" active=\"false\" anchor=\"left\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"-1\" side_tool=\"true\" content_ui=\"tabs\" />\n      <window_info id=\"Debug\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.4\" sideWeight=\"0.5\" order=\"3\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Cvs\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.25\" sideWeight=\"0.5\" order=\"4\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Hierarchy\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.25\" sideWeight=\"0.5\" order=\"2\" side_tool=\"false\" content_ui=\"combo\" />\n      <window_info id=\"Message\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"0\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Commander\" active=\"false\" anchor=\"right\" auto_hide=\"false\" internal_type=\"SLIDING\" type=\"SLIDING\" visible=\"false\" weight=\"0.4\" sideWeight=\"0.5\" order=\"0\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Find\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.33\" sideWeight=\"0.5\" order=\"1\" side_tool=\"false\" content_ui=\"tabs\" />\n      <window_info id=\"Inspection\" active=\"false\" anchor=\"bottom\" auto_hide=\"false\" internal_type=\"DOCKED\" type=\"DOCKED\" visible=\"false\" weight=\"0.4\" sideWeight=\"0.5\" order=\"5\" side_tool=\"false\" content_ui=\"tabs\" />\n    </layout>\n  </component>\n  <component name=\"antWorkspaceConfiguration\">\n    <option name=\"IS_AUTOSCROLL_TO_SOURCE\" value=\"false\" />\n    <option name=\"FILTER_TARGETS\" value=\"false\" />\n  </component>\n  <component name=\"editorHistoryManager\">\n    <entry file=\"file://$PROJECT_DIR$/src/others/Property.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state vertical-scroll-proportion=\"0.0\">\n          <caret line=\"8\" column=\"13\" selection-start-line=\"8\" selection-start-column=\"13\" selection-end-line=\"8\" selection-end-column=\"13\" />\n          <folding />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/farm/Animal.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state vertical-scroll-proportion=\"0.0\">\n          <caret line=\"7\" column=\"20\" selection-start-line=\"7\" selection-start-column=\"20\" selection-end-line=\"7\" selection-end-column=\"20\" />\n          <folding />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/cars/Car.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state vertical-scroll-proportion=\"0.0\">\n          <caret line=\"26\" column=\"11\" selection-start-line=\"26\" selection-start-column=\"11\" selection-end-line=\"26\" selection-end-column=\"11\" />\n          <folding>\n            <element signature=\"e#532#533#0\" expanded=\"true\" />\n            <element signature=\"e#567#568#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/stacks/ArrayStack.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state vertical-scroll-proportion=\"0.0\">\n          <caret line=\"2\" column=\"13\" selection-start-line=\"2\" selection-start-column=\"13\" selection-end-line=\"2\" selection-end-column=\"13\" />\n          <folding />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/structures/Person.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state vertical-scroll-proportion=\"0.0\">\n          <caret line=\"11\" column=\"18\" selection-start-line=\"11\" selection-start-column=\"18\" selection-end-line=\"11\" selection-end-column=\"18\" />\n          <folding>\n            <element signature=\"e#338#339#0\" expanded=\"true\" />\n            <element signature=\"e#364#365#0\" expanded=\"true\" />\n            <element signature=\"e#402#403#0\" expanded=\"true\" />\n            <element signature=\"e#432#433#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/structures/ListSample.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state vertical-scroll-proportion=\"0.0\">\n          <caret line=\"29\" column=\"5\" selection-start-line=\"10\" selection-start-column=\"3\" selection-end-line=\"29\" selection-end-column=\"5\" />\n          <folding>\n            <element signature=\"imports\" expanded=\"true\" />\n            <element signature=\"e#374#382#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/structures/MapSample.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state vertical-scroll-proportion=\"0.0\">\n          <caret line=\"17\" column=\"31\" selection-start-line=\"17\" selection-start-column=\"31\" selection-end-line=\"17\" selection-end-column=\"31\" />\n          <folding>\n            <element signature=\"imports\" expanded=\"true\" />\n            <element signature=\"e#372#387#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/interfaces/Bop.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state vertical-scroll-proportion=\"0.0\">\n          <caret line=\"2\" column=\"17\" selection-start-line=\"2\" selection-start-column=\"17\" selection-end-line=\"2\" selection-end-column=\"17\" />\n          <folding />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/interfaces/Thing.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state vertical-scroll-proportion=\"0.0\">\n          <caret line=\"2\" column=\"13\" selection-start-line=\"2\" selection-start-column=\"13\" selection-end-line=\"2\" selection-end-column=\"13\" />\n          <folding />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/interfaces/UseThing.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state vertical-scroll-proportion=\"0.0\">\n          <caret line=\"5\" column=\"22\" selection-start-line=\"5\" selection-start-column=\"22\" selection-end-line=\"5\" selection-end-column=\"22\" />\n          <folding />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/inheritance/Talkative.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state vertical-scroll-proportion=\"0.0\">\n          <caret line=\"2\" column=\"22\" selection-start-line=\"2\" selection-start-column=\"22\" selection-end-line=\"2\" selection-end-column=\"22\" />\n          <folding />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/inheritance/UseTalkative.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state vertical-scroll-proportion=\"0.0\">\n          <caret line=\"3\" column=\"13\" selection-start-line=\"3\" selection-start-column=\"13\" selection-end-line=\"3\" selection-end-column=\"13\" />\n          <folding />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/README\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state vertical-scroll-proportion=\"1.0909091\">\n          <caret line=\"34\" column=\"37\" selection-start-line=\"34\" selection-start-column=\"37\" selection-end-line=\"34\" selection-end-column=\"37\" />\n          <folding />\n        </state>\n      </provider>\n    </entry>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 6b2bbe0b927e26fab44a97e9bff3b380d1abfb5a)
++++ b/.idea/workspace.xml	(date 1758381803231)
+@@ -4,24 +4,20 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="8fd9e165-2b19-442d-a347-b9b8261e181d" name="Default" comment="">
+-      <change afterPath="$PROJECT_DIR$/../.idea/TAP-ivan-molinero.iml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/groovyc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/bank/UseBankMap.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++    <list default="true" id="8fd9e165-2b19-442d-a347-b9b8261e181d" name="Default" comment="TAP1 additional exercise finished, wating for correction from teaching staff.">
++      <change afterPath="$PROJECT_DIR$/src/bank/AccountOwnerComparator.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/out/production/TAP1/bank/Bank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAP1/bank/Bank.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/out/production/TAP1/bank/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAP1/bank/Customer.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/out/production/TAP1/bank/UseBank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAP1/bank/UseBank.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/TAP1/interfaces/Castings.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAP1/interfaces/Castings.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/TAP1/structures/AgeComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAP1/structures/AgeComparator.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/TAP1/structures/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAP1/structures/Client.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/TAP1/structures/Test3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAP1/structures/Test3.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/bank/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/Bank.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/bank/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/Customer.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/bank/UseBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/UseBank.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/interfaces/Castings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/Castings.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../TAP4/TAP4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../TAP4/TAP4.iml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../TapGroovy/TapGroovy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../TapGroovy/TapGroovy.iml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../TapGroovy2/TapGroovy2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../TapGroovy2/TapGroovy2.iml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/bank/UseBankMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/UseBankMap.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/structures/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/Client.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/structures/Test3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/Test3.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -156,6 +152,18 @@
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+   </component>
++  <component name="GitHubPullRequestSearchHistory">{
++  &quot;lastFilter&quot;: {
++    &quot;state&quot;: &quot;OPEN&quot;,
++    &quot;assignee&quot;: &quot;ivanmoliinero&quot;
++  }
++}</component>
++  <component name="GithubPullRequestsUISettings">{
++  &quot;selectedUrlAndAccountId&quot;: {
++    &quot;url&quot;: &quot;https://github.com/ivanmoliinero/TAP-ivan-molinero.git&quot;,
++    &quot;accountId&quot;: &quot;2684ad53-5233-4de5-8313-8320eb0c3540&quot;
++  }
++}</component>
+   <component name="GradleLocalSettings">
+     <option name="externalProjectsViewState">
+       <projects_view />
+@@ -256,6 +264,7 @@
+     "Application.UseBankMap.executor": "Run",
+     "Application.UseThing.executor": "Run",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
++    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+     "RunOnceActivity.git.unshallow": "true",
+     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+     "git-widget-placeholder": "master",
+@@ -270,7 +279,7 @@
+       <recent name="$PROJECT_DIR$" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="Application.UseBankMap">
++  <component name="RunManager" selected="Application.Test3">
+     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+       <module name="" />
+       <option name="ACTIVITY_CLASS" value="" />
+@@ -487,8 +496,8 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="structures.Test" />
++    <configuration name="Test3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="structures.Test3" />
+       <module name="TAP1" />
+       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+       <extension name="coverage">
+@@ -572,19 +581,19 @@
+       </method>
+     </configuration>
+     <list>
++      <item itemvalue="Application.Test3" />
+       <item itemvalue="Application.Castings" />
+       <item itemvalue="Application.UseBankMap" />
+       <item itemvalue="Application.UseThing" />
+-      <item itemvalue="Application.Test" />
+       <item itemvalue="Application.UseBank" />
+     </list>
+     <recent_temporary>
+       <list>
++        <item itemvalue="Application.Test3" />
+         <item itemvalue="Application.UseBankMap" />
+         <item itemvalue="Application.UseBank" />
+         <item itemvalue="Application.Castings" />
+         <item itemvalue="Application.UseThing" />
+-        <item itemvalue="Application.Test" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -603,6 +612,15 @@
+       <updated>1441784674414</updated>
+       <workItem from="1441784678986" duration="2794000" />
+     </task>
++    <task id="LOCAL-00001" summary="TAP1 additional exercise finished, wating for correction from teaching staff.">
++      <option name="closed" value="true" />
++      <created>1757958948336</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1757958948336</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TimeTrackingManager">
+@@ -637,6 +655,10 @@
+       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+     </layout>
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="TAP1 additional exercise finished, wating for correction from teaching staff." />
++    <option name="LAST_COMMIT_MESSAGE" value="TAP1 additional exercise finished, wating for correction from teaching staff." />
+   </component>
+   <component name="antWorkspaceConfiguration">
+     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+Index: src/bank/Bank.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package bank;\n\nimport java.io.Serializable;\nimport java.util.*;\n\n/**\n * Created by pedro on 9/14/15.\n */\npublic class Bank implements Serializable {\n    private static final long serialVersionUID = 1; // for the version of serialization.\n\n    private String name;\n    private List<Account> accounts;\n    private Map<String, List<Account>> accountsMap;\n    private List<Customer> customers;\n\n    public Bank(String name) {\n        accounts = new LinkedList<>();\n        customers = new LinkedList<>();\n        accountsMap = new HashMap<String, List<Account>>();\n        this.name = name;\n    }\n\n    public void addAccount(Account newAccount){\n        accounts.add(newAccount);\n    }\n    public void removeAccount(Account oldAccount) { accounts.remove(oldAccount); }\n    public List<Account> getAccounts(){\n        return accounts;\n    }\n    public void addCustomer(Customer newCustomer){\n        customers.add(newCustomer);\n    }\n    public void removeCustomer(Customer oldCustomer){\n        customers.remove(oldCustomer);\n    }\n    public List<Customer> getCustomers() { return customers; }\n\n    public void addAccountMap(Account newAccount) {\n        if(null == accountsMap.get(newAccount.getOwner().getId())) {\n            List<Account> newList = new LinkedList<>();\n            newList.add(newAccount);\n            accountsMap.put(newAccount.getOwner().getId(), newList);\n        }\n        else {\n            accountsMap.get(newAccount.getOwner().getId()).add(newAccount); // TODO: Add repetition control.\n        }\n    }\n    public void removeAccountMap(Account oldAccount) {\n        List<Account> accCost = accountsMap.get(oldAccount.getOwner().getId());\n        if(accCost.size() == 1)\n            accountsMap.remove(oldAccount.getOwner().getId());\n        else\n            accCost.remove(oldAccount);\n    }\n    public List<Account> getAccountsMap() {\n        Iterator<List<Account>> it = accountsMap.values().iterator();\n        List<Account> result = new LinkedList<>();\n        while(it.hasNext()) {\n            result.addAll(it.next());\n        }\n\n        return result;\n    }\n\n    public void showAccounts(){\n        for (Account a:accounts)\n            System.out.println(a);\n    }\n\n    public void revision(){\n        for (Account acc:accounts)\n            acc.revision();\n    }\n\n    public void lottery() { accounts.get(new Random().nextInt()).deposit(300); }\n\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/bank/Bank.java b/src/bank/Bank.java
+--- a/src/bank/Bank.java	(revision 6b2bbe0b927e26fab44a97e9bff3b380d1abfb5a)
++++ b/src/bank/Bank.java	(date 1758380458643)
+@@ -10,24 +10,15 @@
+     private static final long serialVersionUID = 1; // for the version of serialization.
+ 
+     private String name;
+-    private List<Account> accounts;
+     private Map<String, List<Account>> accountsMap;
+     private List<Customer> customers;
+ 
+     public Bank(String name) {
+-        accounts = new LinkedList<>();
+         customers = new LinkedList<>();
+         accountsMap = new HashMap<String, List<Account>>();
+         this.name = name;
+     }
+ 
+-    public void addAccount(Account newAccount){
+-        accounts.add(newAccount);
+-    }
+-    public void removeAccount(Account oldAccount) { accounts.remove(oldAccount); }
+-    public List<Account> getAccounts(){
+-        return accounts;
+-    }
+     public void addCustomer(Customer newCustomer){
+         customers.add(newCustomer);
+     }
+@@ -63,17 +54,29 @@
+         return result;
+     }
+ 
++    // NOTE: Both method could be optimised to avoid 2 iterations over the accounts and just one by not reusing the method getAccountsMap() implemented.
+     public void showAccounts(){
+-        for (Account a:accounts)
++        for(Account a : getAccountsMap()) {
+             System.out.println(a);
++        }
+     }
++
++    public List<Account> orderAccountsByOwner() {
++        List<Account> acc = getAccountsMap();
++        acc.sort(new AccountOwnerComparator());
++        return acc;
++    }
++
++    public void orderAccountsByBalance() {
++        // it would be the same as the method above with a new Comparator.
++    }
+ 
+     public void revision(){
+-        for (Account acc:accounts)
++        for (Account acc:getAccountsMap())
+             acc.revision();
+     }
+ 
+-    public void lottery() { accounts.get(new Random().nextInt()).deposit(300); }
++    public void lottery() { getAccountsMap().get(new Random().nextInt(accountsMap.size())).deposit(300); }
+ 
+ 
+ }
+Index: src/bank/AccountOwnerComparator.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/bank/AccountOwnerComparator.java b/src/bank/AccountOwnerComparator.java
+new file mode 100644
+--- /dev/null	(date 1758380415102)
++++ b/src/bank/AccountOwnerComparator.java	(date 1758380415102)
+@@ -0,0 +1,9 @@
++package bank;
++
++import java.util.Comparator;
++
++public class AccountOwnerComparator implements Comparator<Account> {
++    public int compare(Account a1, Account a2) {
++        return a1.getOwner().getName().compareTo(a2.getOwner().getName());
++    }
++}
+Index: src/bank/UseBankMap.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package bank;\n\npublic class UseBankMap {\n    public static void main(String[] args) {\n        Customer c1 = new Customer(\"1\",\"pedro\");\n        Customer c2 = new Customer(\"2\",\"pep\");\n        Customer c3 = new Customer(\"3\",\"pau\");\n\n        Account a1 = new CheckingAccount(90,c1);\n        Account a2 = new SaveAccount(100,c2);\n        Account a3 = new InvestFund(10,c3);\n        Account a4 = new BonusAccount(10,c3);\n\n        Bank b1 = new Bank(\"TAP\");\n        b1.addAccountMap(a1);\n        b1.addAccountMap(a2);\n        b1.addAccountMap(a3);\n        b1.addAccountMap(a4);\n\n        b1.addCustomer(c1);\n        b1.addCustomer(c2);\n        b1.addCustomer(c3);\n\n        System.out.println(\"List of accounts:\");\n        System.out.println(b1.getAccountsMap());\n\n        // Add another account to pedro.\n        b1.addAccountMap(new Account(1000, c1));\n        System.out.println(\"\\nAnother account to Pedro:\");\n        System.out.println(b1.getAccountsMap());\n\n        // Remove the initial account from Pedro and remove Pep's account.\n        b1.removeAccountMap(a1);\n        b1.removeAccountMap(a2);\n        System.out.println(\"\\nRemove the initial account from Pedro and remove Pep's account:\");\n        System.out.println(b1.getAccountsMap());\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/bank/UseBankMap.java b/src/bank/UseBankMap.java
+--- a/src/bank/UseBankMap.java	(revision 6b2bbe0b927e26fab44a97e9bff3b380d1abfb5a)
++++ b/src/bank/UseBankMap.java	(date 1758380422384)
+@@ -9,7 +9,7 @@
+         Account a1 = new CheckingAccount(90,c1);
+         Account a2 = new SaveAccount(100,c2);
+         Account a3 = new InvestFund(10,c3);
+-        Account a4 = new BonusAccount(10,c3);
++        Account a4 = new BonusAccount(20,c3);
+ 
+         Bank b1 = new Bank("TAP");
+         b1.addAccountMap(a1);
+@@ -17,22 +17,29 @@
+         b1.addAccountMap(a3);
+         b1.addAccountMap(a4);
+ 
+-        b1.addCustomer(c1);
+-        b1.addCustomer(c2);
+-        b1.addCustomer(c3);
+-
+         System.out.println("List of accounts:");
+-        System.out.println(b1.getAccountsMap());
++        b1.showAccounts();
+ 
+         // Add another account to pedro.
+         b1.addAccountMap(new Account(1000, c1));
+         System.out.println("\nAnother account to Pedro:");
+-        System.out.println(b1.getAccountsMap());
++        b1.showAccounts();
+ 
+         // Remove the initial account from Pedro and remove Pep's account.
+         b1.removeAccountMap(a1);
+         b1.removeAccountMap(a2);
+         System.out.println("\nRemove the initial account from Pedro and remove Pep's account:");
+-        System.out.println(b1.getAccountsMap());
++        b1.showAccounts();
++
++        // Apply the lottery system to one of the accounts
++        System.out.println("\nAppliance of the lottery system:\nBefore the lottery:");
++        b1.showAccounts();
++        b1.lottery();
++        System.out.println("\nAfter the lottery:");
++        b1.showAccounts();
++
++        // Order by owner
++        System.out.println("\nAccounts ordered by owner:");
++        System.out.println(b1.orderAccountsByOwner());
+     }
+ }
+Index: src/bank/Customer.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package bank;\n\n/**\n * Created by pedro on 9/14/15.\n */\npublic class Customer {\n    private String id;\n    private String name;\n    private String address;\n    private String phoneNumber;\n\n    @Override\n    public String toString() {\n        return \"Customer{\" +\n                \"name='\" + name + '\\'' +\n                \", id='\" + id + '\\'' +\n                '}';\n    }\n\n    public Customer(String id, String name) {\n        this.id = id;\n        this.name = name;\n    }\n\n    public String getId() { return id; }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/bank/Customer.java b/src/bank/Customer.java
+--- a/src/bank/Customer.java	(revision 6b2bbe0b927e26fab44a97e9bff3b380d1abfb5a)
++++ b/src/bank/Customer.java	(date 1758380397903)
+@@ -5,6 +5,7 @@
+  */
+ public class Customer {
+     private String id;
++
+     private String name;
+     private String address;
+     private String phoneNumber;
+@@ -23,4 +24,8 @@
+     }
+ 
+     public String getId() { return id; }
++
++    public String getName() {
++        return name;
++    }
+ }
+Index: src/structures/Test3.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package structures;\r\n\r\nimport java.util.ArrayList;\r\nimport java.util.Collection;\r\nimport java.util.List;\r\n\r\npublic class Test3 {\r\n\r\n\tpublic static void print(Collection<Client> c) {\r\n\t\tfor (Client p : c) {\r\n\t\t\tSystem.out.println(\"name:\" + p.getName() + \"  age:\" + p.getAge());\r\n\t\t}\r\n\t\tSystem.out.println(\"-------------------------\");\r\n\t}\r\n\r\n\tpublic static void main(String[] args) {\r\n\t\tClient p1 = new Client(\"jose\", 30);\r\n\t\tClient p2 = new Client(\"pedro\", 24);\r\n\t\tClient p3 = new Client(\"jcarlos\", 100);\r\n\r\n\t\tList<Client> c = new ArrayList<>();\r\n\t\tc.add(p1);\r\n\t\tc.add(p2);\r\n\t\tc.add(p3);\r\n\r\n\t\tSystem.out.println(\"-No ordering---------------\");\r\n\t\tprint(c);\r\n\r\n\t\tNameComparator t1 = new NameComparator();\r\n\t\tc.sort(t1);\r\n\t\t//Collections.sort(c, t1);\r\n\t\tSystem.out.println(\"-Ordered by name--------\");\r\n\t\tprint(c);\r\n\r\n\t\tAgeComparator t2 = new AgeComparator();\r\n\t\tc.sort(t2);\r\n\t\tSystem.out.println(\"-Ordered by age--------\");\r\n\t\tprint(c);\r\n\r\n\t}\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/structures/Test3.java b/src/structures/Test3.java
+--- a/src/structures/Test3.java	(revision 6b2bbe0b927e26fab44a97e9bff3b380d1abfb5a)
++++ b/src/structures/Test3.java	(date 1758380606282)
+@@ -2,6 +2,7 @@
+ 
+ import java.util.ArrayList;
+ import java.util.Collection;
++import java.util.Collections;
+ import java.util.List;
+ 
+ public class Test3 {
+@@ -27,7 +28,7 @@
+ 		print(c);
+ 
+ 		NameComparator t1 = new NameComparator();
+-		c.sort(t1);
++		Collections.sort(c);
+ 		//Collections.sort(c, t1);
+ 		System.out.println("-Ordered by name--------");
+ 		print(c);
