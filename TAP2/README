@@ -34,7 +34,8 @@ Exercise 1: Implement filter function in Java -- can be done with Predicate, an 
  
 
 Exercise 2. Using the Bank solution of TAP1, the goal is that Bank implements Iterable. Use the Java "for" iterator to traverse the Accounts in a Bank.
-
+To do this, I will copy the package "bank" from the official solution published in the GitHub. Could use main but for the
+sake of the exercise I will proceed with the solution that did not avoid some implementations.
 
 Exercise 3:  Binary Search Tree
 https://en.wikipedia.org/wiki/Binary_search_tree

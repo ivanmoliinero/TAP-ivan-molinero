@@ -5,9 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b410c348-c3ec-404f-9f10-fd093ae03d70" name="Changes" comment="Filter exercise completed with the demanded functionality.">
+      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/bstree/BSCarTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/bstree/BSTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/bstree/UseBSTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/map2/Map.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/map2/MapSample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TAP1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TAP1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TAP1/src/bank/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TAP1/src/bank/Bank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README" beforeDir="false" afterPath="$PROJECT_DIR$/README" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TAP2/filterMethodImplementation/FilterClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TAP2/filterMethodImplementation/UseFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filterMethodImplementation/FilterClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filterMethodImplementation/UseFilter.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,11 +288,15 @@
     "Application.Test2.executor": "Run",
     "Application.TestFlatMap.executor": "Run",
     "Application.TestParallel.executor": "Run",
+    "Application.UseBSTree.executor": "Run",
+    "Application.UseBank.executor": "Run",
     "Application.UseFilter.executor": "Run",
     "Application.UseStack.executor": "Debug",
     "Application.UseThing.executor": "Run",
     "Application.UseThing2.executor": "Run",
+    "Application.exercisesSolved.filterMethodImplementation.UseFilter.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -303,7 +316,7 @@
       <recent name="functional" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UseFilter">
+  <component name="RunManager" selected="Application.MapSample">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -506,13 +519,13 @@
       <envs />
       <method />
     </configuration>
-    <configuration name="DefaultTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="defaultmethods.DefaultTest" />
+    <configuration name="MapSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercisesSolved.map2.MapSample" />
       <module name="TAP2" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="defaultmethods.*" />
+          <option name="PATTERN" value="exercisesSolved.map2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -520,13 +533,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloRunnable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="vthreads.HelloRunnable" />
+    <configuration name="UseBSTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercisesSolved.bstree.UseBSTree" />
       <module name="TAP2" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="vthreads.*" />
+          <option name="PATTERN" value="exercisesSolved.bstree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -534,27 +547,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlatformThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="vthreads.PlatformThread" />
+    <configuration name="UseBank" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercisesSolved.bank.UseBank" />
       <module name="TAP2" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="vthreads.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SleepMessages" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="vthreads.SleepMessages" />
-      <module name="TAP2" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="vthreads.*" />
+          <option name="PATTERN" value="exercisesSolved.bank.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -582,6 +581,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="exercisesSolved.filterMethodImplementation.UseFilter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercisesSolved.filterMethodImplementation.UseFilter" />
+      <module name="TAP2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercisesSolved.filterMethodImplementation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -605,19 +618,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.HelloRunnable" />
-      <item itemvalue="Application.PlatformThread" />
-      <item itemvalue="Application.SleepMessages" />
+      <item itemvalue="Application.MapSample" />
+      <item itemvalue="Application.UseBSTree" />
+      <item itemvalue="Application.UseBank" />
       <item itemvalue="Application.UseFilter" />
-      <item itemvalue="Application.DefaultTest" />
+      <item itemvalue="Application.exercisesSolved.filterMethodImplementation.UseFilter" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MapSample" />
+        <item itemvalue="Application.UseBSTree" />
+        <item itemvalue="Application.UseBank" />
+        <item itemvalue="Application.exercisesSolved.filterMethodImplementation.UseFilter" />
         <item itemvalue="Application.UseFilter" />
-        <item itemvalue="Application.SleepMessages" />
-        <item itemvalue="Application.PlatformThread" />
-        <item itemvalue="Application.HelloRunnable" />
-        <item itemvalue="Application.DefaultTest" />
       </list>
     </recent_temporary>
   </component>

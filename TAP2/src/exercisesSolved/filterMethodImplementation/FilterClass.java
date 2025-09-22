@@ -1,4 +1,4 @@
-package filterMethodImplementation;
+package exercisesSolved.filterMethodImplementation;
 
 import java.util.LinkedList;
 import java.util.function.Predicate;
