@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b410c348-c3ec-404f-9f10-fd093ae03d70" name="Changes" comment="TAP2 class revised and changes, corrections and anotations added.&#10;First exercise of TAP2 completed with lambda implementation.">
+    <list default="true" id="b410c348-c3ec-404f-9f10-fd093ae03d70" name="Changes" comment="Filter exercise completed with the demanded functionality.">
+      <change beforePath="$PROJECT_DIR$/../TAP1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TAP1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TAP1/src/bank/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TAP1/src/bank/Bank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -650,7 +652,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758471021733</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Filter exercise completed with the demanded functionality.">
+      <option name="closed" value="true" />
+      <created>1758533325869</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1758533325869</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -711,7 +721,8 @@
     <MESSAGE value="Class revised and anotations to the classes made + some corrections.&#10;First exercised done with a lambda function." />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
     <MESSAGE value="TAP2 class revised and changes, corrections and anotations added.&#10;First exercise of TAP2 completed with lambda implementation." />
-    <option name="LAST_COMMIT_MESSAGE" value="TAP2 class revised and changes, corrections and anotations added.&#10;First exercise of TAP2 completed with lambda implementation." />
+    <MESSAGE value="Filter exercise completed with the demanded functionality." />
+    <option name="LAST_COMMIT_MESSAGE" value="Filter exercise completed with the demanded functionality." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

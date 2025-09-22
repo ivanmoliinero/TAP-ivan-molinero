@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fd9e165-2b19-442d-a347-b9b8261e181d" name="Default" comment="TAP1 finished.">
-      <change afterPath="$PROJECT_DIR$/src/bank/AccountOwnerComparator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TAP1/bank/Bank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAP1/bank/Bank.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TAP1/bank/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAP1/bank/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TAP1/bank/UseBank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAP1/bank/UseBank.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TAP1/structures/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAP1/structures/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TAP1/structures/Test3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TAP1/structures/Test3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bank/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/Bank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bank/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bank/UseBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/UseBank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bank/UseBankMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bank/UseBankMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/structures/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/structures/Test3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/Test3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TAP2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TAP2/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

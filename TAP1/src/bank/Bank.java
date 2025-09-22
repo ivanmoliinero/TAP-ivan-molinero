@@ -28,6 +28,7 @@ public class Bank implements Serializable {
     public List<Customer> getCustomers() { return customers; }
 
     public void addAccountMap(Account newAccount) {
+        // método getOrDefault() mejor !!! (permite hacer la comprovación de null y generar una nueva lista.
         if(null == accountsMap.get(newAccount.getOwner().getId())) {
             List<Account> newList = new LinkedList<>();
             newList.add(newAccount);
@@ -35,11 +36,12 @@ public class Bank implements Serializable {
         }
         else {
             accountsMap.get(newAccount.getOwner().getId()).add(newAccount); // TODO: Add repetition control.
+            // en la solución hace un put al final, pero al ser la misma referencia de memoria no hace falta.
         }
     }
     public void removeAccountMap(Account oldAccount) {
         List<Account> accCost = accountsMap.get(oldAccount.getOwner().getId());
-        if(accCost.size() == 1)
+        if(accCost.size() == 1) // o usando método isEmpty();
             accountsMap.remove(oldAccount.getOwner().getId());
         else
             accCost.remove(oldAccount);
@@ -50,9 +52,14 @@ public class Bank implements Serializable {
         while(it.hasNext()) {
             result.addAll(it.next());
         }
+        // en la solución se hace sin iterators, pero completamente válido, haciendo un bucle for-each para values().
 
         return result;
     }
+
+
+    // FALTARÍA UN GETTER PARA TODAS LAS CUENTAS DE UN USUARIO !!!!
+
 
     // NOTE: Both method could be optimised to avoid 2 iterations over the accounts and just one by not reusing the method getAccountsMap() implemented.
     public void showAccounts(){
@@ -78,5 +85,8 @@ public class Bank implements Serializable {
 
     public void lottery() { getAccountsMap().get(new Random().nextInt(accountsMap.size())).deposit(300); }
 
+
+    // FALTARÍA HACER UNA FUNCIÓN PARA GUARDAR Y CARGAR OBJETOS DE FICHERO SERIALIZADO (no lo hago porque es copiar pegar
+    // siempre lo mismo).
 
 }
