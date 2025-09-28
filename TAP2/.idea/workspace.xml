@@ -4,19 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b410c348-c3ec-404f-9f10-fd093ae03d70" name="Changes" comment="Filter exercise completed with the demanded functionality.">
-      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/bstree/BSCarTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/bstree/BSTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/bstree/UseBSTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/map2/Map.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/map2/MapSample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TAP1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TAP1/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b410c348-c3ec-404f-9f10-fd093ae03d70" name="Changes" comment="TAP2 lab completed except the BSCarTree class, which has been asked to the teachers and the answer has to be provided.">
+      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/accountsFromTxt/TokensAccountsStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/bank/AccountId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/bank/AccountType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/countWords/CountWords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/countWords/CountWordsParallel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/countWords/CountWordsPersonalised.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/countWords/big.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/countWords/enwik8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/countWords/pg2000.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README" beforeDir="false" afterPath="$PROJECT_DIR$/README" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TAP2/filterMethodImplementation/FilterClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TAP2/filterMethodImplementation/UseFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/filterMethodImplementation/FilterClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/filterMethodImplementation/UseFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TAP2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TAP2.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,6 +132,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -269,6 +269,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.ComparatorTest.executor": "Run",
+    "Application.CountWords.executor": "Run",
+    "Application.CountWordsParallel.executor": "Run",
+    "Application.CountWordsPersonalised.executor": "Run",
     "Application.DefaultTest.executor": "Run",
     "Application.Enum.executor": "Run",
     "Application.Filter.executor": "Run",
@@ -288,6 +291,8 @@
     "Application.Test2.executor": "Run",
     "Application.TestFlatMap.executor": "Run",
     "Application.TestParallel.executor": "Run",
+    "Application.Tokens.executor": "Run",
+    "Application.TokensAccountsStream.executor": "Run",
     "Application.UseBSTree.executor": "Run",
     "Application.UseBank.executor": "Run",
     "Application.UseFilter.executor": "Run",
@@ -300,7 +305,10 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/ivanmolineromoreno/DatosUNI/3r_curso/Tecniques Avancades de Programacio/TAP-ivan-molinero/TAP2"
+    "last_opened_file_path": "/Users/ivanmolineromoreno/DatosUNI/3r_curso/Tecniques Avancades de Programacio/TAP-ivan-molinero/TAP2",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -312,11 +320,14 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="exercisesSolved.countWords" />
+      <recent name="exercisesSolved.bank" />
+      <recent name="exercisesSolved.map2" />
       <recent name="other" />
       <recent name="functional" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MapSample">
+  <component name="RunManager" selected="Application.CountWordsParallel">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -519,13 +530,13 @@
       <envs />
       <method />
     </configuration>
-    <configuration name="MapSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercisesSolved.map2.MapSample" />
+    <configuration name="CountWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercisesSolved.countWords.CountWords" />
       <module name="TAP2" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exercisesSolved.map2.*" />
+          <option name="PATTERN" value="exercisesSolved.countWords.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -533,13 +544,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UseBSTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercisesSolved.bstree.UseBSTree" />
+    <configuration name="CountWordsParallel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercisesSolved.countWords.CountWordsParallel" />
       <module name="TAP2" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exercisesSolved.bstree.*" />
+          <option name="PATTERN" value="exercisesSolved.countWords.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -547,13 +558,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UseBank" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercisesSolved.bank.UseBank" />
+    <configuration name="CountWordsPersonalised" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercisesSolved.countWords.CountWordsPersonalised" />
       <module name="TAP2" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exercisesSolved.bank.*" />
+          <option name="PATTERN" value="exercisesSolved.countWords.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -561,13 +572,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UseFilter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="filterMethodImplementation.UseFilter" />
+    <configuration name="Tokens" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercisesSolved.accountsFromTxt.Tokens" />
       <module name="TAP2" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="filterMethodImplementation.*" />
+          <option name="PATTERN" value="exercisesSolved.accountsFromTxt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TokensAccountsStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercisesSolved.accountsFromTxt.TokensAccountsStream" />
+      <module name="TAP2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercisesSolved.accountsFromTxt.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -577,20 +602,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="exercisesSolved.filterMethodImplementation.UseFilter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercisesSolved.filterMethodImplementation.UseFilter" />
-      <module name="TAP2" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="exercisesSolved.filterMethodImplementation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -618,19 +629,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MapSample" />
-      <item itemvalue="Application.UseBSTree" />
-      <item itemvalue="Application.UseBank" />
-      <item itemvalue="Application.UseFilter" />
-      <item itemvalue="Application.exercisesSolved.filterMethodImplementation.UseFilter" />
+      <item itemvalue="Application.CountWords" />
+      <item itemvalue="Application.CountWordsParallel" />
+      <item itemvalue="Application.CountWordsPersonalised" />
+      <item itemvalue="Application.Tokens" />
+      <item itemvalue="Application.TokensAccountsStream" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MapSample" />
-        <item itemvalue="Application.UseBSTree" />
-        <item itemvalue="Application.UseBank" />
-        <item itemvalue="Application.exercisesSolved.filterMethodImplementation.UseFilter" />
-        <item itemvalue="Application.UseFilter" />
+        <item itemvalue="Application.CountWordsParallel" />
+        <item itemvalue="Application.CountWordsPersonalised" />
+        <item itemvalue="Application.CountWords" />
+        <item itemvalue="Application.TokensAccountsStream" />
+        <item itemvalue="Application.Tokens" />
       </list>
     </recent_temporary>
   </component>
@@ -673,7 +684,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758533325869</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="TAP2 lab completed except the BSCarTree class, which has been asked to the teachers and the answer has to be provided.">
+      <option name="closed" value="true" />
+      <created>1758553412826</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1758553412826</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -734,8 +753,10 @@
     <MESSAGE value="Class revised and anotations to the classes made + some corrections.&#10;First exercised done with a lambda function." />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
     <MESSAGE value="TAP2 class revised and changes, corrections and anotations added.&#10;First exercise of TAP2 completed with lambda implementation." />
+    <MESSAGE value="TAP1 official solution revised and adapted with comments (not necessary to implement everything demanded for this lab)." />
     <MESSAGE value="Filter exercise completed with the demanded functionality." />
-    <option name="LAST_COMMIT_MESSAGE" value="Filter exercise completed with the demanded functionality." />
+    <MESSAGE value="TAP2 lab completed except the BSCarTree class, which has been asked to the teachers and the answer has to be provided." />
+    <option name="LAST_COMMIT_MESSAGE" value="TAP2 lab completed except the BSCarTree class, which has been asked to the teachers and the answer has to be provided." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
