@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b410c348-c3ec-404f-9f10-fd093ae03d70" name="Changes" comment="TAP2 lab completed except the BSCarTree class, which has been asked to the teachers and the answer has to be provided.">
-      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/accountsFromTxt/TokensAccountsStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/bank/AccountId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/bank/AccountType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/countWords/CountWords.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/countWords/CountWordsParallel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/countWords/CountWordsPersonalised.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/countWords/big.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/countWords/enwik8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/countWords/pg2000.txt" afterDir="false" />
+    <list default="true" id="b410c348-c3ec-404f-9f10-fd093ae03d70" name="Changes" comment="TAP2 exercises of Streams completed initially. Better adaptation has to be done and questions about Streams and the last two exercises must be made.">
+      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/countWords/CountWordsFromFileDirect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/countWords/CountWordsParallelFromFileDirect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TAP2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TAP2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercisesSolved/countWords/CountWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercisesSolved/countWords/CountWords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercisesSolved/countWords/CountWordsParallel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercisesSolved/countWords/CountWordsParallel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,12 +140,12 @@
     &quot;assignee&quot;: &quot;pedrotgn&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ivanmoliinero/TAP-ivan-molinero.git",
-    "accountId": "2684ad53-5233-4de5-8313-8320eb0c3540"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ivanmoliinero/TAP-ivan-molinero.git&quot;,
+    &quot;accountId&quot;: &quot;2684ad53-5233-4de5-8313-8320eb0c3540&quot;
   }
-}]]></component>
+}</component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -270,7 +264,9 @@
   "keyToString": {
     "Application.ComparatorTest.executor": "Run",
     "Application.CountWords.executor": "Run",
+    "Application.CountWordsFromFileDirect.executor": "Run",
     "Application.CountWordsParallel.executor": "Run",
+    "Application.CountWordsParallelFromFileDirect.executor": "Run",
     "Application.CountWordsPersonalised.executor": "Run",
     "Application.DefaultTest.executor": "Run",
     "Application.Enum.executor": "Run",
@@ -544,8 +540,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CountWordsFromFileDirect" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercisesSolved.countWords.CountWordsFromFileDirect" />
+      <module name="TAP2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercisesSolved.countWords.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CountWordsParallel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="exercisesSolved.countWords.CountWordsParallel" />
+      <module name="TAP2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercisesSolved.countWords.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CountWordsParallelFromFileDirect" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercisesSolved.countWords.CountWordsParallelFromFileDirect" />
       <module name="TAP2" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -565,34 +589,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="exercisesSolved.countWords.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tokens" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercisesSolved.accountsFromTxt.Tokens" />
-      <module name="TAP2" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="exercisesSolved.accountsFromTxt.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TokensAccountsStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercisesSolved.accountsFromTxt.TokensAccountsStream" />
-      <module name="TAP2" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="exercisesSolved.accountsFromTxt.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -629,19 +625,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.CountWordsFromFileDirect" />
+      <item itemvalue="Application.CountWordsParallelFromFileDirect" />
       <item itemvalue="Application.CountWords" />
       <item itemvalue="Application.CountWordsParallel" />
       <item itemvalue="Application.CountWordsPersonalised" />
-      <item itemvalue="Application.Tokens" />
-      <item itemvalue="Application.TokensAccountsStream" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.CountWordsParallel" />
-        <item itemvalue="Application.CountWordsPersonalised" />
+        <item itemvalue="Application.CountWordsParallelFromFileDirect" />
+        <item itemvalue="Application.CountWordsFromFileDirect" />
         <item itemvalue="Application.CountWords" />
-        <item itemvalue="Application.TokensAccountsStream" />
-        <item itemvalue="Application.Tokens" />
+        <item itemvalue="Application.CountWordsPersonalised" />
       </list>
     </recent_temporary>
   </component>
@@ -653,7 +649,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="" name="Default" comment="" />
+      <changelist id="b410c348-c3ec-404f-9f10-fd093ae03d70" name="Changes" comment="TAP2 exercises of Streams completed initially. Better adaptation has to be done and questions about Streams and the last two exercises must be made." />
       <created>1441790986672</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -692,7 +688,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758553412826</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="TAP2 exercises of Streams completed initially. Better adaptation has to be done and questions about Streams and the last two exercises must be made.">
+      <option name="closed" value="true" />
+      <created>1759053263624</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1759053263624</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -756,7 +760,8 @@
     <MESSAGE value="TAP1 official solution revised and adapted with comments (not necessary to implement everything demanded for this lab)." />
     <MESSAGE value="Filter exercise completed with the demanded functionality." />
     <MESSAGE value="TAP2 lab completed except the BSCarTree class, which has been asked to the teachers and the answer has to be provided." />
-    <option name="LAST_COMMIT_MESSAGE" value="TAP2 lab completed except the BSCarTree class, which has been asked to the teachers and the answer has to be provided." />
+    <MESSAGE value="TAP2 exercises of Streams completed initially. Better adaptation has to be done and questions about Streams and the last two exercises must be made." />
+    <option name="LAST_COMMIT_MESSAGE" value="TAP2 exercises of Streams completed initially. Better adaptation has to be done and questions about Streams and the last two exercises must be made." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

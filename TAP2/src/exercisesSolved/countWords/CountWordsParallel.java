@@ -20,7 +20,7 @@ public class CountWordsParallel {
 
         // First we will import the text into a List in order to work with it with streams.
         String line;
-        List<String> words = new LinkedList<>();
+        Vector<String> words = new Vector<>();
         while((line = reader.readLine()) != null) {
             StringTokenizer tokens = new StringTokenizer(line, " "); // TODO: What about other symbols???
             while(tokens.hasMoreTokens()) {

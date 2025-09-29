@@ -21,7 +21,7 @@ public class CountWords {
         }
 
         reader.close();
-
+        
         // Now we will perform a Stream operation to group by words and count all the instances of each group.
         System.out.println("Init of grouping by operation");
         long millis = System.currentTimeMillis();
