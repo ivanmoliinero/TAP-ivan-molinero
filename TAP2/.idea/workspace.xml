@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b410c348-c3ec-404f-9f10-fd093ae03d70" name="Changes" comment="TAP2 exercises of Streams completed initially. Better adaptation has to be done and questions about Streams and the last two exercises must be made.">
-      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/countWords/CountWordsFromFileDirect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercisesSolved/countWords/CountWordsParallelFromFileDirect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercisesSolved/countWords/CountWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercisesSolved/countWords/CountWords.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercisesSolved/countWords/CountWordsParallel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercisesSolved/countWords/CountWordsParallel.java" afterDir="false" />
-    </list>
+    <list default="true" id="b410c348-c3ec-404f-9f10-fd093ae03d70" name="Changes" comment="TAP2 last 2 exercises succesfully completed." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -696,7 +690,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759053263624</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="TAP2 last 2 exercises succesfully completed.">
+      <option name="closed" value="true" />
+      <created>1759167660162</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1759167660162</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -761,7 +763,8 @@
     <MESSAGE value="Filter exercise completed with the demanded functionality." />
     <MESSAGE value="TAP2 lab completed except the BSCarTree class, which has been asked to the teachers and the answer has to be provided." />
     <MESSAGE value="TAP2 exercises of Streams completed initially. Better adaptation has to be done and questions about Streams and the last two exercises must be made." />
-    <option name="LAST_COMMIT_MESSAGE" value="TAP2 exercises of Streams completed initially. Better adaptation has to be done and questions about Streams and the last two exercises must be made." />
+    <MESSAGE value="TAP2 last 2 exercises succesfully completed." />
+    <option name="LAST_COMMIT_MESSAGE" value="TAP2 last 2 exercises succesfully completed." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
