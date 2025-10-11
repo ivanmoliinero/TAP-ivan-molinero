@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b410c348-c3ec-404f-9f10-fd093ae03d70" name="Changes" comment="TAP2 last 2 exercises succesfully completed." />
+    <list default="true" id="b410c348-c3ec-404f-9f10-fd093ae03d70" name="Changes" comment="TAP2 last 2 exercises succesfully completed.">
+      <change afterPath="$PROJECT_DIR$/../TAP3/src/solvedExercisesIvan/filesystem/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TAP3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TAP3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TAP3/src/solvedExercisesIvan/filesystem/Directory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TAP3/src/solvedExercisesIvan/filesystem/Directory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TAP3/src/solvedExercisesIvan/filesystem/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TAP3/src/solvedExercisesIvan/filesystem/File.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -254,53 +260,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ComparatorTest.executor": "Run",
-    "Application.CountWords.executor": "Run",
-    "Application.CountWordsFromFileDirect.executor": "Run",
-    "Application.CountWordsParallel.executor": "Run",
-    "Application.CountWordsParallelFromFileDirect.executor": "Run",
-    "Application.CountWordsPersonalised.executor": "Run",
-    "Application.DefaultTest.executor": "Run",
-    "Application.Enum.executor": "Run",
-    "Application.Filter.executor": "Run",
-    "Application.Functional.executor": "Run",
-    "Application.HelloRunnable.executor": "Run",
-    "Application.ListenerTest.executor": "Run",
-    "Application.Map2.executor": "Run",
-    "Application.MapSample (1).executor": "Run",
-    "Application.MapSample.executor": "Run",
-    "Application.PlatformThread.executor": "Run",
-    "Application.RunnableTest.executor": "Run",
-    "Application.SleepMessages.executor": "Run",
-    "Application.Static.executor": "Run",
-    "Application.Streams.executor": "Run",
-    "Application.Streams2.executor": "Run",
-    "Application.Test.executor": "Run",
-    "Application.Test2.executor": "Run",
-    "Application.TestFlatMap.executor": "Run",
-    "Application.TestParallel.executor": "Run",
-    "Application.Tokens.executor": "Run",
-    "Application.TokensAccountsStream.executor": "Run",
-    "Application.UseBSTree.executor": "Run",
-    "Application.UseBank.executor": "Run",
-    "Application.UseFilter.executor": "Run",
-    "Application.UseStack.executor": "Debug",
-    "Application.UseThing.executor": "Run",
-    "Application.UseThing2.executor": "Run",
-    "Application.exercisesSolved.filterMethodImplementation.UseFilter.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/ivanmolineromoreno/DatosUNI/3r_curso/Tecniques Avancades de Programacio/TAP-ivan-molinero/TAP2",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ComparatorTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CountWords.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CountWordsFromFileDirect.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CountWordsParallel.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CountWordsParallelFromFileDirect.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CountWordsPersonalised.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DefaultTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Enum.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Filter.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Functional.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HelloRunnable.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ListenerTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Map2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MapSample (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.MapSample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PlatformThread.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RunnableTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SleepMessages.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Static.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Streams.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Streams2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TestFlatMap.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TestParallel.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Tokens.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TokensAccountsStream.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UseBSTree.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UseBank.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UseFilter.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UseStack.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.UseThing.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UseThing2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.exercisesSolved.filterMethodImplementation.UseFilter.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ivanmolineromoreno/DatosUNI/3r_curso/Tecniques Avancades de Programacio/TAP-ivan-molinero/TAP2&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/generics" />
@@ -621,9 +627,9 @@
     <list>
       <item itemvalue="Application.CountWordsFromFileDirect" />
       <item itemvalue="Application.CountWordsParallelFromFileDirect" />
-      <item itemvalue="Application.CountWords" />
       <item itemvalue="Application.CountWordsParallel" />
       <item itemvalue="Application.CountWordsPersonalised" />
+      <item itemvalue="Application.CountWords" />
     </list>
     <recent_temporary>
       <list>

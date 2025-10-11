@@ -1,4 +1,4 @@
-package solvedExercisesIvan.filesystem;
+package solvedExercisesIvan.filesystem2;
 
 import java.util.Collections;
 import java.util.LinkedList;
@@ -9,10 +9,10 @@ public class File implements SystemComponent {
     private String name;
     private SystemComponent father;
 
-    public File(String name, SystemComponent father) {
+    public File(String name) {
         this.name = name;
-        this.father = father;
     }
+
 
     @Override
     public String ls() {
@@ -58,6 +58,11 @@ public class File implements SystemComponent {
     @Override
     public String getName() {
         return name;
+    }
+
+    @Override
+    public void addFather(SystemComponent father) {
+        this.father = father;
     }
 
     public String toString() {

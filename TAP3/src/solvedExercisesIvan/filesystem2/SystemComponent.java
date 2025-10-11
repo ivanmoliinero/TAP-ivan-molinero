@@ -1,4 +1,4 @@
-package solvedExercisesIvan.filesystem;
+package solvedExercisesIvan.filesystem2;
 
 import java.util.List;
 import java.util.function.Predicate;
@@ -14,4 +14,5 @@ public interface SystemComponent {
     public String toString();
 
     public String getName();
+    public void addFather(SystemComponent father);
 }

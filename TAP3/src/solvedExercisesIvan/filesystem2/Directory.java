@@ -1,26 +1,26 @@
-package solvedExercisesIvan.filesystem;
+package solvedExercisesIvan.filesystem2;
 
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.function.*;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
-public class Directory implements SystemComponent {
+public class Directory implements SystemComponent, Iterable<SystemComponent> {
     private List<SystemComponent> subComponents; // no matter if they are files or directories.
     private String name;
     private SystemComponent father;
 
-    public Directory(String name, SystemComponent father) {
+    public Directory(String name) {
         subComponents = new LinkedList<>();
         this.name = name;
-        this.father = father;
+        this.father = null;
     }
 
-    public void addComponent(SystemComponent newComponent) {
+    public void addComponent(SystemComponent newComponent) throws AlreadyAddedException {
+        if(subComponents.contains(newComponent))
+            throw new AlreadyAddedException(newComponent);
         subComponents.add(newComponent);
+        newComponent.addFather(this);
     }
 
     @Override
@@ -122,6 +122,10 @@ public class Directory implements SystemComponent {
         });
 
         res.add(this);
+
+        // EXTRA: Order this.
+        res.sort((elem1, elem2) -> elem1.getName().compareTo(elem2.getName()));
+
         return res;
     }
 
@@ -196,10 +200,20 @@ public class Directory implements SystemComponent {
         return name;
     }
 
+    @Override
+    public void addFather(SystemComponent father) {
+        this.father = father;
+    }
+
     public String toString() {
         if(father == null)
             return name;
 
         return father + "/" + name;
+    }
+
+    @Override
+    public Iterator<SystemComponent> iterator() {
+        return subComponents.iterator(); // shall we do an iteration over all objects???
     }
 }
