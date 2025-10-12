@@ -4,18 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="024cd87f-eb98-4d9d-8a09-9b114020ffe4" name="Default" comment="First 5 exercises solved, init of FileSystem exercise.">
-      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/filesystem/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/filesystem2/AlreadyAddedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/filesystem2/Directory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/filesystem2/File.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/filesystem2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/filesystem2/SystemComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TAP2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TAP2/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="024cd87f-eb98-4d9d-8a09-9b114020ffe4" name="Default" comment="Exercise 6 of Filesystem implemented.">
+      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/filesystemVisitor/Directory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/filesystemVisitor/File.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/filesystemVisitor/FileSystemVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/filesystemVisitor/LSVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/filesystemVisitor/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/filesystemVisitor/SystemComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/iterator/Container.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/iterator/Iterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/iterator/IteratorPatternDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/iterator/NameRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/oberverList/AlreadyExistsObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/oberverList/BackupObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/oberverList/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/oberverList/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/oberverList/ObserverList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/oberverList/PrintObserver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/solvedExercisesIvan/filesystem/Directory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/filesystem/Directory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/solvedExercisesIvan/filesystem/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/filesystem/File.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/solvedExercisesIvan/filesystem/SystemComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/filesystem/SystemComponent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,8 +153,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Exception" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -277,6 +283,7 @@
   "keyToString": {
     "Application.IteratorPatternDemo.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.Test.executor": "Run",
     "Application.composite.Main.executor": "Run",
     "Application.factory.Main.executor": "Run",
     "Application.main.executor": "Run",
@@ -285,27 +292,28 @@
     "Application.solvedExercisesIvan.counterSingleton.Main.executor": "Run",
     "Application.solvedExercisesIvan.filesystem.Main.executor": "Run",
     "Application.solvedExercisesIvan.filesystem2.Main.executor": "Run",
+    "Application.solvedExercisesIvan.oberverList.Main.executor": "Run",
     "Application.solvedExercisesIvan.observerCounterSingleton.Test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/ivanmolineromoreno/DatosUNI/3r_curso/Tecniques Avancades de Programacio/TAP-ivan-molinero/TAP3/src/solvedExercisesIvan/filesystem2"
+    "last_opened_file_path": "/Users/ivanmolineromoreno/DatosUNI/3r_curso/Tecniques Avancades de Programacio/TAP-ivan-molinero/TAP3/src/solvedExercisesIvan/filesystemVisitor"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/solvedExercisesIvan/filesystemVisitor" />
+      <recent name="$PROJECT_DIR$/src/solvedExercisesIvan/iterator" />
       <recent name="$PROJECT_DIR$/src/solvedExercisesIvan/filesystem2" />
       <recent name="$PROJECT_DIR$/src/solvedExercisesIvan/observerCounterSingleton" />
       <recent name="$PROJECT_DIR$/src/classAdapter" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/composite" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.solvedExercisesIvan.filesystem2.Main">
+  <component name="RunManager" selected="Application.solvedExercisesIvan.oberverList.Main">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -514,36 +522,50 @@
       <envs />
       <method />
     </configuration>
+    <configuration name="IteratorPatternDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="solvedExercisesIvan.iterator.IteratorPatternDemo" />
+      <module name="TAP3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="solvedExercisesIvan.iterator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="solvedExercisesIvan.filesystemVisitor.Main" />
+      <module name="TAP3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="solvedExercisesIvan.filesystemVisitor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="visitor2.Test" />
+      <module name="TAP3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="visitor2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="solvedExercisesIvan.messageDecorator.main" />
-      <module name="TAP3" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="solvedExercisesIvan.messageDecorator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="solvedExercisesIvan.counterSingleton.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="solvedExercisesIvan.counterSingleton.Main" />
-      <module name="TAP3" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="solvedExercisesIvan.counterSingleton.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -562,27 +584,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="solvedExercisesIvan.filesystem.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="solvedExercisesIvan.filesystem.Main" />
+    <configuration name="solvedExercisesIvan.oberverList.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="solvedExercisesIvan.oberverList.Main" />
       <module name="TAP3" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="solvedExercisesIvan.filesystem.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="solvedExercisesIvan.observerCounterSingleton.Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="solvedExercisesIvan.observerCounterSingleton.Test" />
-      <module name="TAP3" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="solvedExercisesIvan.observerCounterSingleton.*" />
+          <option name="PATTERN" value="solvedExercisesIvan.oberverList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -613,19 +621,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.solvedExercisesIvan.filesystem.Main" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.solvedExercisesIvan.oberverList.Main" />
+      <item itemvalue="Application.IteratorPatternDemo" />
       <item itemvalue="Application.solvedExercisesIvan.filesystem2.Main" />
-      <item itemvalue="Application.main" />
-      <item itemvalue="Application.solvedExercisesIvan.counterSingleton.Main" />
-      <item itemvalue="Application.solvedExercisesIvan.observerCounterSingleton.Test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.solvedExercisesIvan.oberverList.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.IteratorPatternDemo" />
         <item itemvalue="Application.solvedExercisesIvan.filesystem2.Main" />
-        <item itemvalue="Application.solvedExercisesIvan.filesystem.Main" />
-        <item itemvalue="Application.main" />
-        <item itemvalue="Application.solvedExercisesIvan.observerCounterSingleton.Test" />
-        <item itemvalue="Application.solvedExercisesIvan.counterSingleton.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -656,7 +664,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760114831232</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Exercise 6 of Filesystem implemented.">
+      <option name="closed" value="true" />
+      <created>1760207764972</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1760207764973</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -702,7 +718,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First 5 exercises solved, init of FileSystem exercise." />
-    <option name="LAST_COMMIT_MESSAGE" value="First 5 exercises solved, init of FileSystem exercise." />
+    <MESSAGE value="Exercise 6 of Filesystem implemented." />
+    <option name="LAST_COMMIT_MESSAGE" value="Exercise 6 of Filesystem implemented." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
