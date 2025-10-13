@@ -4,24 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="024cd87f-eb98-4d9d-8a09-9b114020ffe4" name="Default" comment="Exercise 6 of Filesystem implemented.">
-      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/filesystemVisitor/Directory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/filesystemVisitor/File.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/filesystemVisitor/FileSystemVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/filesystemVisitor/LSVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/filesystemVisitor/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/filesystemVisitor/SystemComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/iterator/Container.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/iterator/Iterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/iterator/IteratorPatternDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/iterator/NameRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/oberverList/AlreadyExistsObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/oberverList/BackupObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/oberverList/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/oberverList/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/oberverList/ObserverList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/solvedExercisesIvan/oberverList/PrintObserver.java" afterDir="false" />
+    <list default="true" id="024cd87f-eb98-4d9d-8a09-9b114020ffe4" name="Default" comment="All exercises finished except for 8, which has not been completed yet due to repetitive algorithm and procedure.">
+      <change afterPath="$PROJECT_DIR$/../TAP4/src/solutionsIvanMolinero/DynamicProxyIvan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TAP4/src/solutionsIvanMolinero/EmpBusinessLogic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TAP4/src/solutionsIvanMolinero/EmpBusinessLogicInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TAP4/src/solutionsIvanMolinero/EmployeeDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TAP4/src/solutionsIvanMolinero/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TAP4/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TAP4/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TAP4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TAP4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TAP4/TAP4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../TAP4/TAP4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TAP4/out/production/TAP4/employee/TestEmployeeDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TAP4/out/production/TAP4/employee/TestEmployeeDetails.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,28 +272,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.IteratorPatternDemo.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.Test.executor": "Run",
-    "Application.composite.Main.executor": "Run",
-    "Application.factory.Main.executor": "Run",
-    "Application.main.executor": "Run",
-    "Application.solutions.iterator.IteratorPatternDemo.executor": "Run",
-    "Application.solutions.visitor.Main.executor": "Run",
-    "Application.solvedExercisesIvan.counterSingleton.Main.executor": "Run",
-    "Application.solvedExercisesIvan.filesystem.Main.executor": "Run",
-    "Application.solvedExercisesIvan.filesystem2.Main.executor": "Run",
-    "Application.solvedExercisesIvan.oberverList.Main.executor": "Run",
-    "Application.solvedExercisesIvan.observerCounterSingleton.Test.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/ivanmolineromoreno/DatosUNI/3r_curso/Tecniques Avancades de Programacio/TAP-ivan-molinero/TAP3/src/solvedExercisesIvan/filesystemVisitor"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.IteratorPatternDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.composite.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.factory.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.solutions.iterator.IteratorPatternDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.solutions.visitor.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.solvedExercisesIvan.counterSingleton.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.solvedExercisesIvan.filesystem.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.solvedExercisesIvan.filesystem2.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.solvedExercisesIvan.oberverList.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.solvedExercisesIvan.observerCounterSingleton.Test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ivanmolineromoreno/DatosUNI/3r_curso/Tecniques Avancades de Programacio/TAP-ivan-molinero/TAP3&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/solvedExercisesIvan/filesystemVisitor" />
@@ -313,7 +306,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.solvedExercisesIvan.oberverList.Main">
+  <component name="RunManager" selected="Application.Test">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -621,17 +614,17 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.IteratorPatternDemo" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Test" />
-      <item itemvalue="Application.solvedExercisesIvan.oberverList.Main" />
-      <item itemvalue="Application.IteratorPatternDemo" />
       <item itemvalue="Application.solvedExercisesIvan.filesystem2.Main" />
+      <item itemvalue="Application.solvedExercisesIvan.oberverList.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.solvedExercisesIvan.oberverList.Main" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Test" />
         <item itemvalue="Application.IteratorPatternDemo" />
         <item itemvalue="Application.solvedExercisesIvan.filesystem2.Main" />
       </list>
@@ -672,7 +665,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760207764973</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="All exercises finished except for 8, which has not been completed yet due to repetitive algorithm and procedure.">
+      <option name="closed" value="true" />
+      <created>1760289063465</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1760289063466</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -719,7 +720,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First 5 exercises solved, init of FileSystem exercise." />
     <MESSAGE value="Exercise 6 of Filesystem implemented." />
-    <option name="LAST_COMMIT_MESSAGE" value="Exercise 6 of Filesystem implemented." />
+    <MESSAGE value="All exercises finished except for 8, which has not been completed yet due to repetitive algorithm and procedure." />
+    <option name="LAST_COMMIT_MESSAGE" value="All exercises finished except for 8, which has not been completed yet due to repetitive algorithm and procedure." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
